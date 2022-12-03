@@ -1,0 +1,24 @@
+Tecnico:
+        Hacer html basico
+        Agregar funcionalidad de scroll
+        Agregar estilos 
+        Agregar background
+General:
+        Hacer el disenio primeramente
+        Estar pendiente con el responsive y el peso de la pagina
+        Agregar absolutamente todos los proyectos y el link del codigo
+        Hacer animaciones bonitas y originales
+        Destacar mis gustos y mi historia
+        Hacerlo minimalista, con degradados y disenios modernos
+        Pendiente con detalles
+
+
+
+        Crear la pagina basada en scroll verticales, dividirla en secciones, en las que se hable de 
+
+                titulo
+                acerca de mi
+                proyectos
+                contacto
+
+
