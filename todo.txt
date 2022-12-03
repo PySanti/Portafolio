@@ -3,6 +3,7 @@ Tecnico:
         Agregar funcionalidad de scroll
         Agregar estilos 
         Agregar background
+        Agregar titulo de la pagina e icono
 General:
         Hacer el disenio primeramente
         Estar pendiente con el responsive y el peso de la pagina
