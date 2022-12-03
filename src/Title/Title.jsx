@@ -4,8 +4,11 @@ import "./TitleStyles.css"
 
 export function Title(){
     return (
-        <div id="initial-title">
-            <h1 id="initial-title__text"><b id="initial-title__text__intro-text">Hi, my name </b>is Santiago De Andrade</h1>
-        </div>
+    <header className="header-container">
+        <h1 className="header-container__text">
+            Hi, my name is 
+            <b className="header-container__text__intro-text">Santiago De Andrade</b>
+        </h1>
+    </header>
     )
 }

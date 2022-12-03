@@ -4,8 +4,8 @@ import "./ContactStyles.css"
 
 export function Contact(props){
     return (
-        <div id="contact-content">
-            Contac
-        </div>
+        <footer className="contact-content">
+            footer
+        </footer>
     )
 }
