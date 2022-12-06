@@ -2,16 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1vw;
 }
 .header-container__text{
     height: auto;
     width: auto;
-    display: flex;
-    align-items: center;
 }
 
 .header-container__text__intro-text{
     width: auto;
     height: auto;
-    margin: 1vw;
 }

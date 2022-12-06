@@ -6,8 +6,10 @@ import {Contact} from "./Contact/Contact"
 import { Projects } from './Projects/Projects';
 import { Tecnos } from './Tecnos/Tecnos';
 import { SlideMenu } from './SlideMenu/SlideMenu';
+import { setTecnosAnimation } from './Tecnos/func/setTecnosAnimation';
 
 
+export const tecnosClassName = "tecnos-container__list__item"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -22,3 +24,8 @@ root.render(
   </div>
   </>
 );
+
+setTimeout(() => {
+setTecnosAnimation()
+
+}, 0)
