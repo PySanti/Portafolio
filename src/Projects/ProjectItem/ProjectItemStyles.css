@@ -1,0 +1,10 @@
+.project-item{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.project-item__video{
+    width: 100px;
+    height: 100px;
+}

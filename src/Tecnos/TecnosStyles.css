@@ -1,0 +1,13 @@
+
+.tecnos-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.tecnos-container *{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}

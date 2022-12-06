@@ -1,0 +1,19 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.projects-container *{
+    height: auto;
+}
+
+.projects-container__projects_list{
+    display: flex;
+    overflow: auto;
+}
+
+.projects-container__title{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.contact-content *{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.contact-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
