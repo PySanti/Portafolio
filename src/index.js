@@ -5,14 +5,18 @@ import { About } from './About/About';
 import {Contact} from "./Contact/Contact"
 import "./Header/HeaderStyles.css"
 import { Projects } from './Projects/Projects';
+import { Tecnos } from './Tecnos/Tecnos';
+import { SlideMenu } from './SlideMenu/SlideMenu';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
+    <SlideMenu/>
     <Title/>
     <About/>
+    <Tecnos/>
     <Projects/>
     <Contact/>
   </>
