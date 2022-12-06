@@ -1,5 +1,4 @@
 Tecnico:
-        Hacer html basico
         Agrega funcionalidad para autoplay al hacer hover en los projectVideos
         Agregar funcionalidad de scroll
         Agregar estilos 
