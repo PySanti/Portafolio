@@ -12,12 +12,12 @@ import { SlideMenu } from './SlideMenu/SlideMenu';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <>
+  <div className="main-container">
     <SlideMenu/>
     <Title/>
     <About/>
     <Tecnos/>
     <Projects/>
     <Contact/>
-  </>
+  </div>
 );

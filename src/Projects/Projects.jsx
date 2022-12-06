@@ -37,7 +37,7 @@ export function Projects(props){
                     name="Facebook initial page clon" 
                     context="This is a clon of the initial page facebook website" 
                     repoLink="https://github.com/PySanti/InitialFacebookPageClon.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/fip.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -45,7 +45,7 @@ export function Projects(props){
                     name="Firefox initial page clon" 
                     context="This is a clon of the initial page firefox website" 
                     repoLink="https://github.com/PySanti/InitialFirefoxPageClon.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/ffip.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -53,7 +53,7 @@ export function Projects(props){
                     name="Graphic Binary Trees" 
                     context="This is a graphical display of binary trees in the terminal. Personally this was one of the projects I am most proud of. I had to develop on my own a graphical sorting algorithm to be able to aesthetically render the tree on the terminal. It is a project made specifically in C but it can be executed from a Python script." 
                     repoLink="https://github.com/PySanti/Graphic-Binary-Trees.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/gbt.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -61,7 +61,7 @@ export function Projects(props){
                     name="JS input" 
                     context="This is a simple JS project. I just wanted to develop my own JS input. This was one of my firts JavaScript projects" 
                     repoLink="https://github.com/PySanti/JS-input.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/jsi.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -69,7 +69,7 @@ export function Projects(props){
                     name="MegaKiller" 
                     context="This was the first 'game' I made in PyGame, based on Megaman. It was never finished :(" 
                     repoLink="https://github.com/PySanti/megakiller.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/mk.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -77,7 +77,7 @@ export function Projects(props){
                     name="Moving Madafaka Rect" 
                     context="Visual effect of a moving rectangle. Made with Python and PyGame." 
                     repoLink="https://github.com/PySanti/moving-madafaka-rect.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/mmr.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -85,7 +85,7 @@ export function Projects(props){
                     name="Pagina Figo" 
                     context="This was my first page made with HTML and CSS, it is a page based on the life and history of Luis Figo." 
                     repoLink="https://github.com/PySanti/LuisFigoPage.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/pf.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -101,7 +101,7 @@ export function Projects(props){
                     name="SpriteTester" 
                     context="Sprite Tester is a tool created for testing sprites designed for simple games. The test drivers are programmed in the terminal." 
                     repoLink="https://github.com/PySanti/SpriteTester.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/st.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -109,7 +109,7 @@ export function Projects(props){
                     name="Weder" 
                     context="This was mi first project consuming an api. It is a project made for weather getting. It was mader with JS, HTML and CSS" 
                     repoLink="https://github.com/PySanti/wederapp.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/wed.mp4"
                     />
                 </li>
                 <li className="projects-container__projects_list__project">
@@ -117,7 +117,7 @@ export function Projects(props){
                     name="Zombies JS" 
                     context="Zombies JS is a project made to experiment with the movement of elements in HTML. Made in HTML, CSS and JavaScript" 
                     repoLink="https://github.com/PySanti/zombies-js.git"
-                    videoFileName ="./projectVideos/"
+                    videoFileName ="./projectVideos/zjs.mp4"
                     />
                 </li>
             </ul>
