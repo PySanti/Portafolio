@@ -2,9 +2,19 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 50vw;
+    height: 100%;
+}
+.project-item *{
+    width: auto;
+    height: auto;
+}
+.project-item__name{
+    display: flex;
+    align-items: center;
 }
 .project-item__video{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 50%;
 }

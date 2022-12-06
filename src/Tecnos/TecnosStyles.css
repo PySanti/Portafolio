@@ -11,3 +11,6 @@
     width: auto;
     height: auto;
 }
+.tecnos-container__list *{
+    margin: 1vw;
+}

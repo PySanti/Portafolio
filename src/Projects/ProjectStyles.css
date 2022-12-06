@@ -6,12 +6,22 @@
 
 .projects-container *{
     height: auto;
+    width: auto;
 }
 
 .projects-container__projects_list{
+    height: 50%;
+    width: 50vw;
+    list-style: none;
+    overflow: scroll;
+    background-color: #0f0;
+
     display: flex;
-    overflow: auto;
+    flex-direction: row;
+    margin-right:1vw ;
 }
+
+
 
 .projects-container__title{
     display: flex;
