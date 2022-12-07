@@ -10,7 +10,5 @@ export function setTecnosAnimation(){
         currentTecno = tecnosHTMLList[i]
         tecnosOBJList.push(new Tecno(currentTecno))
     }
-    console.log(tecnosHTMLList)
-    console.log(tecnosOBJList)
 }
 

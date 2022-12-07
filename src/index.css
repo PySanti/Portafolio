@@ -3,12 +3,18 @@
   padding: 0;
 }
 
+#root{
+  overflow-x: hidden;
+}
+
 .main-container{
   display: flex;
   flex-direction: row;
   width: 500vw;
   height: 100vh;
-  overflow-x: scroll;
+  position: relative;
+  left: 0vw;
+  transition: left .5s;
 }
 
 .main-container *{

@@ -1,0 +1,33 @@
+.scroll-charger{
+    position : fixed;
+    right : 5vw;
+    top : 3vh;
+    width: 10vw;
+    height: 3vh;
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 20px;
+    color : inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    overflow: hidden;
+    outline: 2px solid #000;
+}
+
+.scroll-charger__charge{
+    width: 10vw;
+    height: 3vh;
+    background-color: indianred;
+    position: absolute;
+    left: 0%;
+    padding: 20px;
+    transition: left 0.1s;
+    border-radius: 20px;
+}
+
+.scroll-charger__content{
+    position: relative;
+    z-index: 999;
+}
