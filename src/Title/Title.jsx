@@ -6,7 +6,7 @@ export function Title(){
     return (
     <header className="header-container">
         <h1 className="header-container__text">
-            Hi, my name is  <span className="header-container__text__intro-text selected-text">Santiago De Andrade </span> and this is my portafolio
+            Hi, my name is  <strong className="header-container__text__intro-text selected-text">Santiago De Andrade </strong> and this is my portafolio
         </h1>
     </header>
     )
