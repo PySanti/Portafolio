@@ -14,7 +14,7 @@
     width: 50vw;
     list-style: none;
     overflow: scroll;
-    background-color: #0f0;
+    outline: 1px solid #000;
 
     display: flex;
     flex-direction: row;

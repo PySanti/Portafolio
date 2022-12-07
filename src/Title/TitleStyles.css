@@ -9,3 +9,10 @@
     width: auto;
 }
 
+
+.header-container__text__intro-text{
+    color : var(--base-color);
+    font-weight: 100;
+    text-shadow: 0px 0px 20px var(--base-color);
+}
+

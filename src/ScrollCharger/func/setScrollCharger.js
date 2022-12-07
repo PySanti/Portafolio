@@ -30,11 +30,14 @@ export function setScrollCharger(){
     const scrollCharger = document.getElementsByClassName(scrollChargerClassName)[0]
     const charger = document.getElementsByClassName(scrollChargerITEMClassName)[0]
     const htmlElement = document.getElementsByTagName("html")[0]
+    const keys = ["ArrowRight", "ArrowLeft", "Tab"]
 
     htmlElement.addEventListener("keydown", (e) => {
-        e.preventDefault()
-        if (e.key === "ArrowRight" || e.key === "ArrowLeft"){
-            setFunction(e.key==="ArrowRight", mainContainer, scrollCharger, charger)
+        if (keys.includes(e.key)){
+            e.preventDefault()
+            if (e.key !== keys[2]){
+                setFunction(e.key==="ArrowRight", mainContainer, scrollCharger, charger)
+            }
         }
     })
     htmlElement.addEventListener("wheel", (e) => {

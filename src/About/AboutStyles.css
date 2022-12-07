@@ -5,14 +5,28 @@
 }
 
 .about-container__title{
+    font-size: 3vw;
     display: flex;
-    justify-content: center;
-}
+    justify-content: center; }
 .about-container *{
     width: auto;
     height: auto;
 }
 .about-container__paraph{
-    margin-right: 1vw ;
+    font-size: 1vw;
+    margin-right: 3vw ;
+}
+
+
+.about-container__paraph__u{
+    text-decoration: none;
+    margin: 1vw;
+    color : var(--base-color);
+    transition: text-shadow .5s, margin .5s;
+}
+
+.about-container__paraph__u:hover{
+    margin : 2vw;
+    text-shadow: 0px 0px 10px ;
 }
 

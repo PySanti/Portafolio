@@ -26,7 +26,7 @@ root.render(
     <About/>
     <Tecnos/>
     <Projects/>
-    <Contact/>
+    <Contact email="santiagodeandrade4@gmail.com"/>
   </div>
   </>
 );

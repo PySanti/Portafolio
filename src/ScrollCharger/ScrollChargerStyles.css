@@ -2,8 +2,8 @@
     position : fixed;
     right : 5vw;
     top : 3vh;
-    width: 3vw;
-    height: 1vh;
+    width: 2vw;
+    height: .5vh;
     padding: 10px;
     background-color: inherit;
     border-radius: 20px;
@@ -13,14 +13,14 @@
     justify-content: center;
     z-index: 99;
     overflow: hidden;
-    outline: 2px solid #000;
-    box-shadow: 0px 0px 20px #a22;
+    outline: 2px solid inherit;
+    box-shadow: 0px 0px 20px var(--base-color);
 }
 
 .scroll-charger__charge{
     width: inherit;
     height: inherit;
-    background-color: indianred;
+    background-color: var(--base-color);
     position: absolute;
     left: 0%;
     padding: 20px;

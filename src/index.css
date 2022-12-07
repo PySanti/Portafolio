@@ -6,6 +6,8 @@
 #root{
   overflow-x: hidden;
   font-family: 'Roboto Mono', monospace;
+  --base-color : rgb(224, 113, 22);
+  --back-color : rgb(117, 76, 0);
 }
 
 .main-container{
@@ -16,7 +18,7 @@
   position: relative;
   left: 0vw;
   transition: left .5s;
-  background: linear-gradient(to right, #111, #a12, #000);
+  background: linear-gradient(to right, #111 , var(--back-color) 30%, #111 );
 }
 
 .main-container *{
