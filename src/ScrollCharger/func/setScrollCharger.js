@@ -1,5 +1,5 @@
-import { scrollChargerClassName } from "../.."
-import { scrollChargerITEMClassName } from "../.."
+import { scrollChargerCONTENTClassName } from "../.."
+import { scrollChargerCHARGEClassName } from "../.."
 import { maxScrolling } from "../.."
 
 
@@ -27,8 +27,8 @@ se aumente o disminuya el valor de scrollCount y se mueva el charger. Lo mismo p
 */
 export function setScrollCharger(){
     const mainContainer = document.getElementsByClassName("main-container")[0]
-    const scrollCharger = document.getElementsByClassName(scrollChargerClassName)[0]
-    const charger = document.getElementsByClassName(scrollChargerITEMClassName)[0]
+    const scrollCharger = document.getElementsByClassName(scrollChargerCONTENTClassName)[0]
+    const charger = document.getElementsByClassName(scrollChargerCHARGEClassName)[0]
     const htmlElement = document.getElementsByTagName("html")[0]
     const keys = ["ArrowRight", "ArrowLeft", "Tab"]
 

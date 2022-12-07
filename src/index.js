@@ -9,12 +9,17 @@ import { SlideMenu } from './SlideMenu/SlideMenu';
 import { setTecnosAnimation } from './Tecnos/func/setTecnosAnimation';
 import { ScrollCharger } from './ScrollCharger/ScrollCharger';
 import { setScrollCharger } from './ScrollCharger/func/setScrollCharger';
+import { activateTitle } from './Title/func/activateTitle';
+import { activateScrollCharger } from './ScrollCharger/func/activateScrollCharger';
 
 
 export const tecnosClassName = "tecnos-container__list__item"
-export const scrollChargerClassName = "scroll-charger__content"
-export const scrollChargerITEMClassName = "scroll-charger__charge"
+export const scrollChargerClassName = "scroll-charger"
+export const scrollChargerCONTENTClassName = "scroll-charger__content"
+export const scrollChargerCHARGEClassName = "scroll-charger__charge"
 export const maxScrolling = 5;
+export const titleClassName = "header-container__text"
+export const titleNAMEClassName = "header-container__text__intro-text"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -32,6 +37,8 @@ root.render(
 );
 
 setTimeout(() => {
+  activateTitle()
+  activateScrollCharger()
   setTecnosAnimation()
   setScrollCharger()
 }, 0)
