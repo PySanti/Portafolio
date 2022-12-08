@@ -1,11 +1,11 @@
 
 .tecnos-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 .tecnos-container *{
+    position: absolute;
     display: flex;
     justify-content: center;
     width: auto;
@@ -13,4 +13,7 @@
 }
 .tecnos-container__list *{
     margin: 1vw;
+    top : 0vw;
+    position: relative;
+    transition: top .3s, transform .5s;
 }
