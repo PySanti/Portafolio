@@ -7,7 +7,10 @@
 .about-container__title{
     font-size: 3vw;
     display: flex;
-    justify-content: center; }
+    justify-content: center; 
+    opacity: 0;
+    transition: opacity 1s;
+}
 .about-container *{
     width: auto;
     height: auto;
@@ -21,6 +24,8 @@
 .about-container__paraph__u{
     text-decoration: none;
     margin: 1vw;
+    opacity: 0;
+    cursor: pointer;
     color : var(--base-color);
     transition: text-shadow .5s, margin .5s;
 }
@@ -30,3 +35,7 @@
     text-shadow: 0px 0px 10px ;
 }
 
+.about-container__paraph__word{
+    opacity: 0;
+    transition : opacity .5s;
+}

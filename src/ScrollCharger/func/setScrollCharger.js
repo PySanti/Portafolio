@@ -1,3 +1,4 @@
+import { pagesAnimation } from "../.."
 import { scrollChargerCONTENTClassName } from "../.."
 import { scrollChargerCHARGEClassName } from "../.."
 import { maxScrolling } from "../.."
@@ -14,8 +15,18 @@ function setFunction(scrollRight, mainContainer, scrollCharger, charger){
         scrollCount+=-scrollMove
     }
     if ((scrollCount === 100 && ((currentLeft*-1) < ((maxScrolling*100)-100))) || (scrollCount===0 && (currentLeft!==0))){
-        mainContainer.style.left = scrollCount === 100? `${currentLeft-100}vw`:`${currentLeft+100}vw`
-        scrollCount = scrollCount === 100? 0 : 100;
+        currentLeft = scrollCount === 100? currentLeft-100:currentLeft+100
+        mainContainer.style.left = `${currentLeft}vw`
+        if (scrollCount === 100){
+            scrollCount = 0
+            let currentAnimation = (currentLeft/100)*-1
+            if ((pagesAnimation[currentAnimation] !== undefined)&& (!pagesAnimation[currentAnimation].done)){
+                pagesAnimation[currentAnimation].done = true
+                pagesAnimation[currentAnimation].func()
+            }
+        } else {
+            scrollCount = 100
+        }
     }
     scrollCharger.innerHTML = `${scrollCount}%`
     charger.style.left = `${scrollCount}%`
@@ -42,6 +53,6 @@ export function setScrollCharger(){
     })
     htmlElement.addEventListener("wheel", (e) => {
         e.preventDefault()
-        setFunction(e.deltaY < 0, mainContainer, scrollCharger, charger)
+        setFunction(e.deltaY > 0, mainContainer, scrollCharger, charger)
     })
 }
