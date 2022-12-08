@@ -6,7 +6,7 @@ import {
 import { activateAboutContainerTitle } from "./activateAboutContainerTitle";
 
 let wordI = 0
-const wordsShowTimer = 100
+const wordsShowTimer = 50
 function activateWords(words){
     if (wordI < words.length){
         setTimeout(() =>{
@@ -45,5 +45,5 @@ export function activateAboutContainer(){
     activateWords(aboutContainer.childNodes)
     setTimeout(() => {
         activateAboutContainerTitle()
-    }, wordsShowTimer*aboutContainer.childNodes.length)
+    }, wordsShowTimer*(aboutContainer.childNodes.length+2))
 }
