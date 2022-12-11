@@ -2,9 +2,11 @@ import { pagesAnimation } from "../.."
 import { scrollChargerCONTENTClassName } from "../.."
 import { scrollChargerCHARGEClassName } from "../.."
 import { maxScrolling } from "../.."
+import { removeTecnosInterval, setTecnosInterval } from "../../Tecnos/func/setTecnosInterval"
 
 
 
+let tecnosList  = undefined
 function setFunction(scrollRight, mainContainer, scrollCharger, charger){
     let scrollCount         = Number(scrollCharger.innerHTML.split("%")[0])
     let currentLeft         = mainContainer.style.left.includes("px")? Number(mainContainer.style.left.split("px")[0]):Number(mainContainer.style.left.split("vw")[0]);
