@@ -1,8 +1,8 @@
 Tecnico:
+        Refactorizar el codigo para : mayor eficiencia, agregar css desde css (usando clases), mejorar legibilidad 
         Hacer que las presentaciones no esten en orden, usar position relative
         Agrgear imagen con movimiento de fondo
         Agregar efecto neon
-        Arreglar efecto de ucab
         Mejorar el background
         Agregar animacion de presentacion a cada pagina
         Agrega funcionalidad para autoplay al hacer hover en los projectVideos
