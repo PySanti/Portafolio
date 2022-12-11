@@ -12,7 +12,14 @@ import { activateTitle } from './Title/func/activateTitle';
 import { activateScrollCharger } from './ScrollCharger/func/activateScrollCharger';
 import { activateAboutContainer } from './About/func/activateAboutContainer';
 import { activateTecnos } from './Tecnos/func/activateTecnos';
+import { activateContact } from './Contact/func/activateContact';
 
+export const contactContentClassName = "contact-content"
+export const contactContentTITLEClassName = "contact-content__title"
+export const contactContentTITLE_MEClassName = "contact-content__title__me"
+export const contactContentPARAPHClassName = "contact-content__paraph"
+export const contactContentPARAPH_P1ClassName = "contact-content__paraph__p1"
+export const contactContentPARAPH_P2ClassName = "contact-content__paraph__p2"
 
 export const tecnosTitleClassName = "tecnos-container__title"
 export const tenocsTitleDOMClassName = "tecnos-container__title__dom"
@@ -50,7 +57,7 @@ export const pagesAnimation = {
   },
   4 : {
     done : false,
-    func : activateTecnos
+    func : activateContact
   }
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -64,7 +71,7 @@ root.render(
     <About/>
     <Tecnos/>
     <Projects/>
-    <Contact email="santiagodeandrade4@gmail.com"/>
+    <Contact/>
   </div>
   </>
 );

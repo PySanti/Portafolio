@@ -2,11 +2,19 @@ import React from "react";
 import "./ContactStyles.css"
 
 
-export function Contact({email}){
+export function Contact(){
     return (
         <footer className="contact-content">
-            <h3 className="contact-content__title">Contact me</h3>
-            <p className="contact-content__paraph">{email}</p>
+            <h2 className="contact-content__title">
+                Contact 
+                <span className="contact-content__title__me">Me</span>
+            </h2>
+
+            <p className="contact-content__paraph">
+                <span className="contact-content__paraph__p1 paraph-part">santiagodeandrade4</span>
+                @
+                <span className="contact-content__paraph__p2 paraph-part">gmail.com</span>
+            </p>
         </footer>
     )
 }
