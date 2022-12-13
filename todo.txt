@@ -11,6 +11,8 @@ Tecnico:
         Agregar background
         Agregar titulo de la pagina e icono
 General:
+        Agregar boton de traduccion
+        Revisar fuentes y tamanios de los titulos (que sean iguales)
         Agregar tutorial de uso en la title
         Agregar opcion para copiar correo
         lateral slider charger

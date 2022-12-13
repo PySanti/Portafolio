@@ -1,3 +1,7 @@
+
+.contact-content__paraph{
+    font-size: 1vw;
+}
 .contact-content__title{
     position: relative;
     left : -5vw;
@@ -29,8 +33,9 @@
     justify-content: center;
 }
 .contact-content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
