@@ -6,7 +6,6 @@
     width: 10vw;
     height: 10vh;
     position: relative;
-    justify-content: center;
     background-color: var(--back-color);
     border-radius: 20px;
     opacity: 0;
@@ -16,7 +15,6 @@
     transition: 
     transform .5s,
     background-color .5s,
-    margin .5s, 
     opacity var(--base-transition-duration), 
 }
 
@@ -27,7 +25,6 @@
     align-items: center;
     text-align: center;
     font-size: .7vw;
-    transition : font-size 1s;
     position: relative;
     top : 0%;
     width: inherit;
@@ -38,10 +35,7 @@
 
 .project-item__video{
     top : 0%;
-    display: flex;
     opacity: 1;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: relative;
     width: inherit;

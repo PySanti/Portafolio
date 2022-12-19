@@ -19,8 +19,13 @@
 .about-container__paraph{
     font-size: 1vw;
     margin-right: 3vw ;
+    cursor: pointer;
 }
 
+.about-container__paraph__word{
+    opacity: 0;
+    transition: opacity .5s;
+}
 
 .about-container__paraph__u{
     text-decoration: none;
@@ -31,15 +36,20 @@
     transition: text-shadow .5s, margin .5s;
 }
 
-.about-container__paraph__u:hover{
-    margin : 2vw;
+.about-container__paraph:hover .about-container__paraph__u{
+    margin-right : 2vw;
+    margin-left : 2vw;
     text-shadow: 0px 0px 10px ;
 }
 
-.about-container__paraph__word{
-    opacity: 0;
-    transition : opacity .5s;
+
+.about-container__paraph:hover .about-container__paraph__u{
+    margin-right : 2vw;
+    margin-left : 2vw;
+    text-shadow: 0px 0px 10px ;
 }
+
+
 
 .about-container__title__comp{
     margin : 1vw;

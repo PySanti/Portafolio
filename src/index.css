@@ -7,8 +7,8 @@
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: 'Roboto Mono', monospace;
-  --base-color : rgb(22, 194, 224);
-  --back-color : rgb(71, 55, 139);
+  --back-color : rgb(71, 69, 69);
+  --base-color : #00d9ff ;
   max-height: 100vh;
 }
 
@@ -27,4 +27,8 @@
   width: 100vw;
   height: 100vh;
   color : #fff;
+}
+
+.page-title-selected-text{
+  cursor: pointer;
 }

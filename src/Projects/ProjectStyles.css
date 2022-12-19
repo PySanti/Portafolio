@@ -1,7 +1,6 @@
 .projects-container{
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -25,21 +24,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 3vw;
     opacity: 0;
-    max-width: 30vw;
     left : -2vw;
-    top : 0vh;
-    transition : left 1s, opacity 1s, top 1s;
-}
-.projects-container__title__UNSHOWED{
-    top : -20vh;
+    transition : left 1s, opacity 1s;
 }
 .projects-container__title__made{
     margin : 1vw;
     transition : margin 1s, color 1s, text-shadow 1s;
 }
-
 
 .projects-container__title__ACTIVATED{
     left : 0vw; 

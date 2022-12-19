@@ -22,7 +22,6 @@ export function activateAboutContainer(){
     const textContent = aboutContainer.textContent
     let wordsList = textContent.split(" ")
     aboutContainer.innerHTML = ""
-    
     const keyWordsLen = aboutContainerKeyWords['content'].split(" ").length
     let currentSlice = ""
 

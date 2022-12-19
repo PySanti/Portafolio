@@ -5,7 +5,6 @@ import { About } from './About/About';
 import {Contact} from "./Contact/Contact"
 import { Projects } from './Projects/Projects';
 import { Tecnos } from './Tecnos/Tecnos';
-import { SlideMenu } from './SlideMenu/SlideMenu';
 import { ScrollCharger } from './ScrollCharger/ScrollCharger';
 import { setScrollCharger } from './ScrollCharger/func/setScrollCharger';
 import { activateTitle } from './Title/func/activateTitle';
@@ -22,38 +21,38 @@ export const projectsTitleMADEClassName                 = "projects-container__t
 export const projectsTitleMADE__ACTIVATEDClassName      = "projects-container__title__made__ACTIVATED"
 
 export const projectItemClassName                       = "project-item"
-export const projectItemContainerClassName               = "projects-container__projects_list"
+export const projectItemContainerClassName              = "projects-container__projects_list"
 export const projectItem_ACTIVATEDClassName             = "project-item__ACTIVATED"
-export const projectItem_SHOWEDClassName             = "project-item__SHOWED"
-export const projectsContainerClassName = "projects-container"
+export const projectItem_SHOWEDClassName                = "project-item__SHOWED"
+export const projectsContainerClassName                 = "projects-container"
 
-export const contactContentClassName = "contact-content"
-export const contactContentTITLEClassName = "contact-content__title"
-export const contactContentTITLE_MEClassName = "contact-content__title__me"
-export const contactContentPARAPHClassName = "contact-content__paraph"
-export const contactContentPARAPH_P1ClassName = "contact-content__paraph__p1"
-export const contactContentPARAPH_P2ClassName = "contact-content__paraph__p2"
+export const contactContentClassName                    = "contact-content"
+export const contactContentTITLEClassName               = "contact-content__title"
+export const contactContentTITLE_MEClassName            = "contact-content__title__me"
+export const contactContentPARAPHClassName              = "contact-content__paraph"
+export const contactContentPARAPH_P1ClassName           = "contact-content__paraph__p1"
+export const contactContentPARAPH_P2ClassName           = "contact-content__paraph__p2"
 
-export const tecnosTitleClassName = "tecnos-container__title"
-export const tenocsTitleDOMClassName = "tecnos-container__title__dom"
-export const tecnosListClassName = "tecnos-container__list"
-export const tecnoCountClassName = "tecno-count"
-export const tecnoBarClassName = "tecno-bar"
-export const scrollChargerClassName = "scroll-charger"
-export const scrollChargerCONTENTClassName = "scroll-charger__content"
-export const scrollChargerCHARGEClassName = "scroll-charger__charge"
+export const tecnosTitleClassName                       = "tecnos-container__title"
+export const tenocsTitleDOMClassName                    = "tecnos-container__title__dom"
+export const tecnosListClassName                        = "tecnos-container__list"
+export const tecnoCountClassName                        = "tecno-count"
+export const tecnoBarClassName                          = "tecno-bar"
+export const scrollChargerClassName                     = "scroll-charger"
+export const scrollChargerCONTENTClassName              = "scroll-charger__content"
+export const scrollChargerCHARGEClassName               = "scroll-charger__charge"
 
 export const maxScrolling = 5;
 
-export const titleClassName = "header-container__text"
-export const titleNAMEClassName = "header-container__text__intro-text"
+export const titleClassName                             = "header-container__text"
+export const titleNAMEClassName                         = "header-container__text__intro-text"
 
-export const aboutContainerClassName = "about-container"
-export const aboutContainerTITLEClassName = "about-container__title"
-export const aboutContainerTITLE_COMPClassName = "about-container__title__comp"
-export const aboutContainerPARAPHClassName = "about-container__paraph"
-export const aboutContainerPARAPH_WORDSClassName = "about-container__paraph__word"
-export const aboutContainerPARAPH_KEYWORDSClassName = "about-container__paraph__u"
+export const aboutContainerClassName                    = "about-container"
+export const aboutContainerTITLEClassName               = "about-container__title"
+export const aboutContainerTITLE_COMPClassName          = "about-container__title__comp"
+export const aboutContainerPARAPHClassName              = "about-container__paraph"
+export const aboutContainerPARAPH_WORDSClassName        = "about-container__paraph__word"
+export const aboutContainerPARAPH_KEYWORDSClassName     = "about-container__paraph__u"
 
 export const aboutContainerKeyWords = {
   "content" : "Universidad Catolica Andres Bello",
@@ -64,7 +63,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
-  <SlideMenu/>
   <ScrollCharger/>
   <div className="main-container">
     <Title/>
@@ -95,7 +93,6 @@ export const pagesAnimation = {
 }
 
 setTimeout(() => {
-
   activateTitle()
   activateScrollCharger()
   setScrollCharger()

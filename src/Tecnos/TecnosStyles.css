@@ -12,9 +12,9 @@
 }
 .tecnos-container__title__dom{
     margin : 1vw;
-    cursor: pointer;
     transition: margin .5s, color .5s, text-shadow .5s;
 }
+
 .tecnos-container__title{
     display: flex;
     align-items: center;
@@ -24,22 +24,15 @@
 }
 
 
-
-
-.tecnos-container__title__dom:hover{
-    margin : 5vw;
-}
 .tecnos-container__list{
     display: flex;
     flex-direction: column;
 }
 .tecnos-container__list__item{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px;
     padding: 1vw;
-    cursor: pointer;
     transition: left .2s;
     width: auto;
     display: flex;
@@ -53,7 +46,7 @@
     background-color: var(--back-color);
     width: 70%;
     height: auto;
-    padding: 5px;
+    padding: .5vw;
     overflow: hidden;
 }
 .tecno-bar-fill{
