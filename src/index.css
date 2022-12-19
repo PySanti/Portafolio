@@ -1,17 +1,28 @@
 *{
   margin: 0;
   padding: 0;
+  user-select: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&family=Roboto+Mono:wght@100;200&family=Sacramento&display=swap');
+p,
+div,
+a{
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2,
+h1{
+  font-family: 'Sacramento', cursive; 
 }
 
 #root{
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: 'Roboto Mono', monospace;
-  --back-color : rgb(71, 69, 69);
-  --base-color : #00d9ff ;
+  --back-color : #e6e6e6;
+  --base-color : #551eec;
+  --title-font-size : 3vw;
   max-height: 100vh;
 }
-
 .main-container{
   display: flex;
   flex-direction: row;
@@ -20,13 +31,13 @@
   position: relative;
   left: 0vw;
   transition: left .5s;
-  background: linear-gradient(to right, #111 , var(--back-color) 30%, #111 );
+  background: linear-gradient(to right, #fff , var(--back-color) 30%, #fff );
 }
 
 .main-container *{
   width: 100vw;
   height: 100vh;
-  color : #fff;
+  color : #000;
 }
 
 .page-title-selected-text{

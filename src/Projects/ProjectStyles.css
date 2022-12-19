@@ -41,7 +41,7 @@
 
 .projects-container__title__made__ACTIVATED{
     margin : 2vw;
-    text-shadow: 0px 0px 10px var(--back-color);
+    text-shadow: 0px 0px 10px var(--base-color);
     color : var(--base-color);
 }
 

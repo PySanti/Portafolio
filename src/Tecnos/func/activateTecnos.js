@@ -28,6 +28,7 @@ function renderTecnosBar(tecnosElementsList){
     setTimeout(() =>{
         if (index < tecnosElementsList.length){
             let [tecnoCount,tecnoBar] = tecnosElementsList[index]
+            tecnoBar.style.filter = "blur(0px)"
             tecnoBar.childNodes[0].style.left = `${-100+(tecnoCount)}%`
             index+=1
             renderTecnosBar(tecnosElementsList)

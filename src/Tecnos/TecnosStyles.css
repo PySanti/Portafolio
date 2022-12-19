@@ -48,6 +48,8 @@
     height: auto;
     padding: .5vw;
     overflow: hidden;
+    filter: blur(10px);
+    transition : filter 2s;
 }
 .tecno-bar-fill{
     position: relative;

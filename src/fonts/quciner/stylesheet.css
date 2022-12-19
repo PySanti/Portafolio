@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Quciner';
+    src: url('QucinerRegular.eot');
+    src: local('Quciner'), local('QucinerRegular'),
+        url('QucinerRegular.eot?#iefix') format('embedded-opentype'),
+        url('QucinerRegular.woff2') format('woff2'),
+        url('QucinerRegular.woff') format('woff'),
+        url('QucinerRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

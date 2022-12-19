@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
 }
+
 
 .about-container__title{
     font-size: 3vw;

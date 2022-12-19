@@ -16,7 +16,6 @@
 
 .header-container__text__intro-text{
     color : var(--base-color);
-    font-weight: 100;
     transition: margin .5s, text-shadow 1s;
     cursor: pointer;
     margin : 0

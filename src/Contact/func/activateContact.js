@@ -13,7 +13,7 @@ function activateContactTitle(){
         title.style.opacity = "1"
         setTimeout(() =>{
             titleMe.style.color = "var(--base-color)"
-            titleMe.style.textShadow = "0px 0px 10px var(--back-color)"
+            titleMe.style.textShadow = "0px 0px 10px var(--base-color)"
             titleMe.style.margin = "3vw"
         }, 1000)
     }, 1000)
