@@ -5,9 +5,11 @@
 
 #root{
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: 'Roboto Mono', monospace;
-  --base-color : rgb(224, 113, 22);
-  --back-color : rgb(117, 76, 0);
+  --base-color : rgb(22, 194, 224);
+  --back-color : rgb(71, 55, 139);
+  max-height: 100vh;
 }
 
 .main-container{

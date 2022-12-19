@@ -1,5 +1,12 @@
 Tecnico:
-        Refactorizar el codigo para : mayor eficiencia, agregar css desde css (usando clases), mejorar legibilidad 
+
+        Seccion de proyectos : 
+                centrar bien projectItem despues de click
+                animacion de mode 2
+                video        
+                error de quit btn
+        Arreglar problema en activacion de PI al hacer click ( al hacer click en titulo o contenido)
+        Refactorizar el codigo para : mayor eficiencia, agregar css desde css (usando clases), mejorar legibilidad , usar mas variables en css
         Hacer que las presentaciones no esten en orden, usar position relative
         Agrgear imagen con movimiento de fondo
         Agregar efecto neon

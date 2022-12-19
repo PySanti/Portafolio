@@ -13,6 +13,19 @@ import { activateScrollCharger } from './ScrollCharger/func/activateScrollCharge
 import { activateAboutContainer } from './About/func/activateAboutContainer';
 import { activateTecnos } from './Tecnos/func/activateTecnos';
 import { activateContact } from './Contact/func/activateContact';
+import { activateProjects } from './Projects/func/activateProjects';
+
+export const projectsTitleClassName                     = "projects-container__title"
+export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
+export const projectsContainerTITLE_UN_SHOWEDClassName  = "projects-container__title__UNSHOWED"
+export const projectsTitleMADEClassName                 = "projects-container__title__made"
+export const projectsTitleMADE__ACTIVATEDClassName      = "projects-container__title__made__ACTIVATED"
+
+export const projectItemClassName                       = "project-item"
+export const projectItemContainerClassName               = "projects-container__projects_list"
+export const projectItem_ACTIVATEDClassName             = "project-item__ACTIVATED"
+export const projectItem_SHOWEDClassName             = "project-item__SHOWED"
+export const projectsContainerClassName = "projects-container"
 
 export const contactContentClassName = "contact-content"
 export const contactContentTITLEClassName = "contact-content__title"
@@ -46,20 +59,7 @@ export const aboutContainerKeyWords = {
   "content" : "Universidad Catolica Andres Bello",
   "href" : "https://elucabista.com/2022/06/09/qs-world-university-ranking-2023-la-ucab-sigue-siendo-la-mejor-universidad-privada-venezuela/",
 }
-export const pagesAnimation = {
-  1 : {
-    done : false,
-    func : activateAboutContainer
-  },
-  2 : {
-    done : false,
-    func : activateTecnos
-  },
-  4 : {
-    done : false,
-    func : activateContact
-  }
-}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -75,8 +75,27 @@ root.render(
   </div>
   </>
 );
+export const pagesAnimation = {
+  1 : {
+    done : false,
+    func : activateAboutContainer
+  },
+  2 : {
+    done : false,
+    func : activateTecnos
+  },
+  3 : {
+    done : false,
+    func : activateProjects
+  },
+  4 : {
+    done : false,
+    func : activateContact
+  }
+}
 
 setTimeout(() => {
+
   activateTitle()
   activateScrollCharger()
   setScrollCharger()
