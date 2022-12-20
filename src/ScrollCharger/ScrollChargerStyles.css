@@ -8,34 +8,13 @@
     width: var(--self-width);
     height: 2vh;
     right : calc(50vw - var(--self-width)/2);
-    top : 99.5vh;
-    background-color: inherit;
-    color : inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-    overflow: hidden;
-    outline: 2px solid inherit;
-
-    transform: scale(0,0);
-    transition: transform 1s, box-shadow .5s;
-}
-
-.scroll-charger__charge{
-    width: inherit;
-    height: inherit;
+    top : 100vh;
     background-color: var(--base-color);
-    position: absolute;
+    z-index: 99;
+    transform: scale(0,0);
+    transition: transform 1s, box-shadow .5s, left 0.1s;
     left: 0%;
     padding: 20px;
-    transition: left 0.1s;
-    border-radius: 20px;
+    box-shadow: 0 -5px 10px var(--base-color);
 }
 
-.scroll-charger__content{
-    opacity: 0;
-    color : #fff;
-    position: relative;
-    z-index: 999;
-}

@@ -1,12 +1,12 @@
 import { pagesAnimation } from "../.."
-import { scrollChargerCONTENTClassName } from "../.."
-import { scrollChargerCHARGEClassName } from "../.."
+import { scrollChargerClassName } from "../.."
 import { maxScrolling } from "../.."
+import { getScrollCount, setScrollCount } from "../../About/func/updateScrollCount"
 
 
 
-function setFunction(scrollRight, mainContainer, scrollCharger, charger){
-    let scrollCount         = Number(scrollCharger.innerHTML.split("%")[0])
+function setFunction(scrollRight, mainContainer, charger){
+    let scrollCount         = getScrollCount()
     let currentLeft         = mainContainer.style.left.includes("px")? Number(mainContainer.style.left.split("px")[0]):Number(mainContainer.style.left.split("vw")[0]);
     const scrollMove = 50
     if ((scrollRight) && (scrollCount<100)){
@@ -28,7 +28,7 @@ function setFunction(scrollRight, mainContainer, scrollCharger, charger){
             } 
         } 
     }
-    scrollCharger.innerHTML = `${scrollCount}%`
+    setScrollCount(scrollCount)
     charger.style.left = `${scrollCount}%`
 }
 
@@ -38,8 +38,7 @@ se aumente o disminuya el valor de scrollCount y se mueva el charger. Lo mismo p
 */
 export function setScrollCharger(){
     const mainContainer = document.getElementsByClassName("main-container")[0]
-    const scrollCharger = document.getElementsByClassName(scrollChargerCONTENTClassName)[0]
-    const charger = document.getElementsByClassName(scrollChargerCHARGEClassName)[0]
+    const charger = document.getElementsByClassName(scrollChargerClassName)[0]
     const htmlElement = document.getElementsByTagName("html")[0]
     const keys = ["ArrowRight", "ArrowLeft", "Tab"]
 
@@ -47,12 +46,12 @@ export function setScrollCharger(){
         if (keys.includes(e.key)){
             e.preventDefault()
             if (e.key !== keys[2]){
-                setFunction(e.key==="ArrowRight", mainContainer, scrollCharger, charger)
+                setFunction(e.key==="ArrowRight", mainContainer, charger)
             }
         }
     })
-    htmlElement.addEventListener("wheel", (e) => {
+    htmlElement.addEventListener("drag", (e) => {
         e.preventDefault()
-        setFunction(e.deltaY > 0, mainContainer, scrollCharger, charger)
-    }, (false))
+        setFunction(e.deltaY > 0, mainContainer, charger)
+    }, )
 }

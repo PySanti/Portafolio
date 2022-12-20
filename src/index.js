@@ -38,9 +38,8 @@ export const tenocsTitleDOMClassName                    = "tecnos-container__tit
 export const tecnosListClassName                        = "tecnos-container__list"
 export const tecnoCountClassName                        = "tecno-count"
 export const tecnoBarClassName                          = "tecno-bar"
-export const scrollChargerClassName                     = "scroll-charger"
-export const scrollChargerCONTENTClassName              = "scroll-charger__content"
-export const scrollChargerCHARGEClassName               = "scroll-charger__charge"
+
+export const scrollChargerClassName              = "scroll-charger"
 
 export const maxScrolling = 5;
 
