@@ -1,18 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=Sacramento&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   user-select: none;
-}
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&family=Roboto+Mono:wght@100;200&family=Sacramento&display=swap');
-p,
-div,
-a{
   font-family: 'Roboto Mono', monospace;
-}
-
-h2,
-h1{
-  font-family: 'Sacramento', cursive; 
 }
 
 #root{
@@ -20,9 +12,49 @@ h1{
   overflow-y: hidden;
   --back-color : #e6e6e6;
   --base-color : #551eec;
-  --title-font-size : 3vw;
+  --base-animation-timer : 3s;
+  --secondary-animation-timer : 1s;
   max-height: 100vh;
 }
+
+
+.main-container *{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.title{
+  height: auto;
+  width: auto;
+  position: relative;
+  font-family: 'Sacramento', cursive; 
+  font-size: 3vw;
+  text-align: center;
+  opacity: 0;
+  left : -100vw;
+  transition: 
+  opacity var(--base-animation-timer), 
+  left var(--secondary-animation-timer),
+  top var(--secondary-animation-timer);
+}
+
+.title__selected-text{
+  font-family: inherit;
+  opacity: 0;
+  cursor: pointer;
+  margin : 0;
+  transition: 
+  margin      var(--secondary-animation-timer), 
+  text-shadow var(--secondary-animation-timer), 
+  opacity     var(--secondary-animation-timer), 
+  color       var(--secondary-animation-timer);
+}
+
+
+
+
 .main-container{
   display: flex;
   flex-direction: row;
@@ -30,16 +62,7 @@ h1{
   height: 100vh;
   position: relative;
   left: 0vw;
-  transition: left .5s;
+  transition: left var(--secondary-animation-timer);
   background: linear-gradient(to right, #fff , var(--back-color) 30%, #fff );
 }
 
-.main-container *{
-  width: 100vw;
-  height: 100vh;
-  color : #000;
-}
-
-.page-title-selected-text{
-  cursor: pointer;
-}

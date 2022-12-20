@@ -2,27 +2,13 @@ import {
     projectItemClassName, 
     projectItem_ACTIVATEDClassName, 
     projectItem_SHOWEDClassName, 
-    projectsContainerTITLE_ACTIVATEDClassName, 
     projectsTitleClassName, 
-    projectsTitleMADEClassName, 
-    projectsTitleMADE__ACTIVATEDClassName 
 } from "../..";
+import { activateTitle } from "../../generalFuncs/activateTitle";
 
 const timer = 100
 let i = 0
 let currentZindex = 1;
-
-function activateProjectsTitle(){
-    const title = document.getElementsByClassName(projectsTitleClassName)[0]
-    const titleMade = document.getElementsByClassName(projectsTitleMADEClassName)[0]
-    setTimeout(() =>{
-        title.classList.add(projectsContainerTITLE_ACTIVATEDClassName)
-        setTimeout(()=>{
-            titleMade.classList.add(projectsTitleMADE__ACTIVATEDClassName)
-        },1000)
-    }, 1000)
-}
-
 
 
 function setPI(pi){
@@ -63,6 +49,6 @@ function activateProjectItems(projectItems){
 
 export function activateProjects(){
     const projectItems = document.getElementsByClassName(projectItemClassName)
-    activateProjectsTitle()
+    activateTitle(projectsTitleClassName)
     activateProjectItems(projectItems)
 }

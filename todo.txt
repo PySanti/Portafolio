@@ -3,10 +3,10 @@ Tecnico:
         Mejorar el background
         Agregar titulo de la pagina e icono
 General:
+        Estandarizar tamanios de titulos y sus animaciones
         Agregar bordes a los PI
         Eliminar animacion del about container
         Mejorar traducciones
-        Determinar color y fuente
         Mejorar efecto del scroll
         Mejorar scroll charger
         Agrgear imagen en movimiento en el fondo

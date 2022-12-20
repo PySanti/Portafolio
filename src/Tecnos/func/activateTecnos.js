@@ -1,14 +1,6 @@
-import { tecnosTitleClassName, tenocsTitleDOMClassName, tecnosListClassName, tecnoCountClassName, tecnoBarClassName } from "../.."
+import { tecnosTitleClassName, tecnosListClassName, tecnoCountClassName, tecnoBarClassName } from "../.."
+import { activateTitle } from "../../generalFuncs/activateTitle"
 
-
-function activateTecnosTitle(title,titleDOM){
-    title.style.opacity = "1"
-    setTimeout(() => {
-        titleDOM.style.margin = "2vw"
-        titleDOM.style.color = "var(--base-color)"
-        titleDOM.style.textShadow = "0px 0px 10px var(--base-color)"
-    }, 2000);
-}
 
 function getElements(tecnoItem){
     let tecnoItemElements = tecnoItem.childNodes
@@ -50,8 +42,6 @@ function activateTecnosList(){
     renderTecnosBar(tecnosElementsList)
 }
 export function activateTecnos(){
-    const title = document.getElementsByClassName(tecnosTitleClassName)[0]
-    const titleDOM = document.getElementsByClassName(tenocsTitleDOMClassName)[0]
-    activateTecnosTitle(title, titleDOM)
+    activateTitle(tecnosTitleClassName)
     activateTecnosList()
 }

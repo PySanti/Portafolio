@@ -3,18 +3,11 @@
     font-size: 1vw;
 }
 .contact-content__title{
-    position: relative;
     left : -5vw;
-    font-size : 3vw;
     display: flex;
-    opacity: 0;
     align-items: center;
-    transition: left 1s, opacity 1s;
 }
-.contact-content__title__me{
-    margin : 1vw;
-    transition: text-shadow 1s, color 1s, margin 1s;
-}
+
 .paraph-part{
     position: relative;
     opacity: 0;

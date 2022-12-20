@@ -2,21 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 .header-container__text{
-    position : relative;
     left : -100vw;
-    opacity: 0;
-    height: auto;
-    width: auto;
-    transition : left 2s,opacity 2s;
-}
-
-
-.header-container__text__intro-text{
-    color : var(--base-color);
-    transition: margin .5s, text-shadow 1s;
-    cursor: pointer;
-    margin : 0
 }

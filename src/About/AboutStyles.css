@@ -2,37 +2,27 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-
 }
 
 
-.about-container__title{
-    font-size: 3vw;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    opacity: 0;
-    transition: opacity 2s;
-}
 .about-container *{
     width: auto;
     height: auto;
+    position: relative;
 }
 .about-container__paraph{
+    left : 20vw;
+    opacity: 0;
     font-size: 1vw;
     margin-right: 3vw ;
     cursor: pointer;
+    transition: left 1s, opacity 1s;
 }
 
-.about-container__paraph__word{
-    opacity: 0;
-    transition: opacity .5s;
-}
 
 .about-container__paraph__u{
     text-decoration: none;
     margin: 1vw;
-    opacity: 0;
     cursor: pointer;
     color : var(--base-color);
     transition: text-shadow .5s, margin .5s;
@@ -45,16 +35,3 @@
 }
 
 
-.about-container__paraph:hover .about-container__paraph__u{
-    margin-right : 2vw;
-    margin-left : 2vw;
-    text-shadow: 0px 0px 10px ;
-}
-
-
-
-.about-container__title__comp{
-    margin : 1vw;
-    color : var(--back-color);
-    transition :    margin .5s, text-shadow .5s, color .5s;
-}

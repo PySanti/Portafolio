@@ -4,7 +4,7 @@ import "./AboutStyles.css"
 export function About(props){
     return (
     <section className="about-container">
-        <h2 className="about-container__title">About <span className="about-container__title__comp page-title-selected-text"> Me </span></h2>
+        <h2 className="about-container__title title">About <span className="about-container__title__comp title__selected-text"> Me </span></h2>
         <p className="about-container__paraph">
             My name is Santiago, I am 17 years old and although I am a first semester 
             student of computer engineering at the 

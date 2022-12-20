@@ -1,23 +1,9 @@
 import { 
-    contactContentTITLEClassName, 
-    contactContentTITLE_MEClassName, 
     contactContentPARAPH_P1ClassName, 
-    contactContentPARAPH_P2ClassName } 
+    contactContentPARAPH_P2ClassName, 
+    contactContentTITLEClassName} 
     from "../..";
-
-function activateContactTitle(){
-    const title = document.getElementsByClassName(contactContentTITLEClassName)[0]
-    const titleMe = document.getElementsByClassName(contactContentTITLE_MEClassName)[0]
-    setTimeout(() =>{
-        title.style.left = "0vw"
-        title.style.opacity = "1"
-        setTimeout(() =>{
-            titleMe.style.color = "var(--base-color)"
-            titleMe.style.textShadow = "0px 0px 10px var(--base-color)"
-            titleMe.style.margin = "3vw"
-        }, 1000)
-    }, 1000)
-}
+import { activateTitle } from "../../generalFuncs/activateTitle";
 
 function activateContactParaph(){
     const paraphP1 = document.getElementsByClassName(contactContentPARAPH_P1ClassName)[0] 
@@ -34,5 +20,5 @@ function activateContactParaph(){
 
 export function activateContact(){
     activateContactParaph()
-    activateContactTitle()
+    activateTitle(contactContentTITLEClassName)
 }

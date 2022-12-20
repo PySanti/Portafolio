@@ -10,17 +10,10 @@
     width: auto;
     height: auto;
 }
-.tecnos-container__title__dom{
-    margin : 1vw;
-    transition: margin .5s, color .5s, text-shadow .5s;
-}
 
 .tecnos-container__title{
     display: flex;
     align-items: center;
-    opacity: 0;
-    transition : opacity 2s, margin .5s;
-    font-size: 3vw;
 }
 
 

@@ -7,12 +7,12 @@ import { Projects } from './Projects/Projects';
 import { Tecnos } from './Tecnos/Tecnos';
 import { ScrollCharger } from './ScrollCharger/ScrollCharger';
 import { setScrollCharger } from './ScrollCharger/func/setScrollCharger';
-import { activateTitle } from './Title/func/activateTitle';
 import { activateScrollCharger } from './ScrollCharger/func/activateScrollCharger';
 import { activateAboutContainer } from './About/func/activateAboutContainer';
 import { activateTecnos } from './Tecnos/func/activateTecnos';
 import { activateContact } from './Contact/func/activateContact';
 import { activateProjects } from './Projects/func/activateProjects';
+import { activateTitle } from './generalFuncs/activateTitle';
 
 export const projectsTitleClassName                     = "projects-container__title"
 export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
@@ -51,13 +51,7 @@ export const aboutContainerClassName                    = "about-container"
 export const aboutContainerTITLEClassName               = "about-container__title"
 export const aboutContainerTITLE_COMPClassName          = "about-container__title__comp"
 export const aboutContainerPARAPHClassName              = "about-container__paraph"
-export const aboutContainerPARAPH_WORDSClassName        = "about-container__paraph__word"
 export const aboutContainerPARAPH_KEYWORDSClassName     = "about-container__paraph__u"
-
-export const aboutContainerKeyWords = {
-  "content" : "Universidad Catolica Andres Bello",
-  "href" : "https://elucabista.com/2022/06/09/qs-world-university-ranking-2023-la-ucab-sigue-siendo-la-mejor-universidad-privada-venezuela/",
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -93,7 +87,7 @@ export const pagesAnimation = {
 }
 
 setTimeout(() => {
-  activateTitle()
+  activateTitle(titleClassName)
   activateScrollCharger()
   setScrollCharger()
 }, 0)
