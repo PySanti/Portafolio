@@ -1,4 +1,5 @@
 .project-item{
+    box-shadow: 0 0 10px var(--base-color);
     user-select: none;
     text-decoration: none;
     --margin-hover : 1vw;
