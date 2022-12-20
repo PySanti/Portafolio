@@ -1,17 +1,10 @@
+        refactor
         Agregar titulo de la pagina e icono
         Mejorar traducciones
-        Mejorar efecto del scroll
-        Mejorar scroll charger
         Agregar boton de traduccion
         Agregar tutorial de uso de seccion de projects
         Agregar boton de copiado en la parte del contacto
-        Revisar fuentes y tamanios de los titulos (que sean iguales)
         Agregar tutorial de uso en la title
         responsive
-        Hacer lateral slider tipo pitch studio (https://anincubator.com/5-tendencias-de-diseno-web-para-2021/?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7085394946&hsa_cam=17293618965&hsa_grp=138547296924&hsa_ad=598828440469&hsa_src=g&hsa_tgt=dsa-1655890131747&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiA7bucBhCeARIsAIOwr-9Y6XFzbBdexOij4vLmAgRY7wNqbmkGxiq3kwo6vt_lHEOEXXVJdGQaAtbGEALw_wcB)
         Modificar readme de todos los proyectos y hacerlos portables
         Estar pendiente con el responsive y el peso de la pagina
-        Hacer animaciones bonitas y originales
-        Destacar mis gustos y mi historia
-        Hacerlo minimalista, con degradados y disenios modernos
-        Pendiente con detalles
