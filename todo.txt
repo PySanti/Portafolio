@@ -2,7 +2,6 @@
         Mejorar traducciones
         Mejorar efecto del scroll
         Mejorar scroll charger
-        Agrgear imagen en movimiento en el fondo
         Agregar boton de traduccion
         Agregar tutorial de uso de seccion de projects
         Agregar boton de copiado en la parte del contacto

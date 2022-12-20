@@ -28,10 +28,9 @@
     transition: text-shadow .5s, margin .5s;
 }
 
-.about-container__paraph:hover .about-container__paraph__u{
-    margin-right : 2vw;
-    margin-left : 2vw;
-    text-shadow: 0px 0px 10px ;
+
+.about-container__paraph__u:hover{
+    text-shadow: 0 0 10px var(--base-color);
 }
 
 

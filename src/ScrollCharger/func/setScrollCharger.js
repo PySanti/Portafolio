@@ -54,5 +54,5 @@ export function setScrollCharger(){
     htmlElement.addEventListener("wheel", (e) => {
         e.preventDefault()
         setFunction(e.deltaY > 0, mainContainer, scrollCharger, charger)
-    })
+    }, (false))
 }

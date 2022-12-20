@@ -1,16 +1,15 @@
 .scroll-charger{
-    --self-width : 30vw;
+    --self-width : 100vw;
     position : fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: var(--self-width);
-    height: .4vh;
+    height: 2vh;
     right : calc(50vw - var(--self-width)/2);
-    top : 97vh;
+    top : 99.5vh;
     background-color: inherit;
-    border-radius: 20px;
     color : inherit;
     display: flex;
     align-items: center;

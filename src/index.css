@@ -10,7 +10,7 @@
 #root{
   overflow-x: hidden;
   overflow-y: hidden;
-  --back-color : #e6e6e6;
+  --back-color : #a09999;
   --base-color : #551eec;
   --base-animation-timer : 3s;
   --secondary-animation-timer : 1s;
