@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
-    transition: left .2s;
+    transition: left var(--secondary-animation-timer);
     width: auto;
     display: flex;
 }
@@ -42,7 +42,7 @@
     padding: .5vw;
     overflow: hidden;
     filter: blur(10px);
-    transition : filter 2s;
+    transition : filter var(--secondary-animation-timer);
 }
 .tecno-bar-fill{
     position: relative;
@@ -52,5 +52,5 @@
     border-radius: inherit;
     background-color: var(--base-color);
     left: -100%;
-    transition: left 1s;
+    transition: left var(--secondary-animation-timer);
 }

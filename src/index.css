@@ -33,7 +33,7 @@
   font-size: 3vw;
   text-align: center;
   opacity: 0;
-  left : -100vw;
+  left : -50vw;
   transition: 
   opacity var(--base-animation-timer), 
   left var(--secondary-animation-timer),

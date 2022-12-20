@@ -2,10 +2,10 @@
     user-select: none;
     text-decoration: none;
     --margin-hover : 1vw;
-    --base-transition-duration : 1s;
     width: 10vw;
     height: 10vh;
     position: relative;
+    color : #000;
     background-color: var(--back-color);
     border-radius: 20px;
     opacity: 0;
@@ -13,9 +13,9 @@
     overflow: hidden;
     transform: scale(1,1);
     transition: 
-    transform .5s,
-    background-color .5s,
-    opacity var(--base-transition-duration), 
+    transform           var(--secondary-animation-timer),
+    background-color    var(--secondary-animation-timer),
+    opacity             var(--base-animation-timer), 
 }
 
 
@@ -29,7 +29,7 @@
     top : 0%;
     width: inherit;
     height: inherit;
-    transition: top .5s;
+    transition: top var(--secondary-animation-timer);
 }
 
 
@@ -40,7 +40,7 @@
     position: relative;
     width: inherit;
     height: inherit;
-    transition: top .5s;
+    transition: top var(--secondary-animation-timer);
     object-fit: cover;
 }
 

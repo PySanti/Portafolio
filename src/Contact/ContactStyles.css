@@ -11,7 +11,9 @@
 .paraph-part{
     position: relative;
     opacity: 0;
-    transition: opacity 1s, top 1s;
+    transition: 
+    opacity var(--secondary-animation-timer), 
+    top var(--secondary-animation-timer);
 }
 .contact-content__paraph__p1{
     top: -2vh;
