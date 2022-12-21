@@ -10,6 +10,7 @@ import { activateTecnos }             from './Pages/Tecnos/func/activateTecnos';
 import { activateContact }            from './Pages/Contact/func/activateContact';
 import { activateProjects }           from './Pages/Projects/func/activateProjects';
 import { activateTitle }              from './GeneralFuncs/activateTitle';
+import { Map } from './Others/Map/Map';
 
 export const projectsTitleClassName                     = "projects-container__title"
 export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
@@ -59,6 +60,7 @@ root.render(
     <Projects/>
     <Contact/>
   </div>
+  <Map/>
   </>
 );
 export const pagesAnimation = {
