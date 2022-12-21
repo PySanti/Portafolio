@@ -50,7 +50,7 @@ export function setScrollCharger(){
             }
         }
     })
-    htmlElement.addEventListener("drag", (e) => {
+    htmlElement.addEventListener("wheel", (e) => {
         e.preventDefault()
         setFunction(e.deltaY > 0, mainContainer, charger)
     }, )
