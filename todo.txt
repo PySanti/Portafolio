@@ -1,5 +1,5 @@
         Agregar modalidad de seleccioon de paginas por mapa
-        refactor, clasificacion de carpetas de componentes para mayor escalabilidad
+        refactor
         Agregar titulo de la pagina e icono
         Mejorar traducciones
         Agregar boton de traduccion

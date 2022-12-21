@@ -5,9 +5,6 @@ import { About }                      from './Pages/About/About';
 import {Contact}                      from "./Pages/Contact/Contact"
 import { Projects }                   from './Pages/Projects/Projects';
 import { Tecnos }                     from './Pages/Tecnos/Tecnos';
-import { ScrollCharger }              from './SecondaryComps/ScrollCharger/ScrollCharger';
-import { setScrollCharger }           from './SecondaryComps/ScrollCharger/func/setScrollCharger';
-import { activateScrollCharger }      from './SecondaryComps/ScrollCharger/func/activateScrollCharger';
 import { activateAboutContainer }     from './Pages/About/func/activateAboutContainer';
 import { activateTecnos }             from './Pages/Tecnos/func/activateTecnos';
 import { activateContact }            from './Pages/Contact/func/activateContact';
@@ -39,7 +36,6 @@ export const tecnosListClassName                        = "tecnos-container__lis
 export const tecnoCountClassName                        = "tecno-count"
 export const tecnoBarClassName                          = "tecno-bar"
 
-export const scrollChargerClassName              = "scroll-charger"
 
 export const maxScrolling = 5;
 
@@ -56,7 +52,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
-  <ScrollCharger/>
   <div className="main-container">
     <Title/>
     <About/>
@@ -87,6 +82,4 @@ export const pagesAnimation = {
 
 setTimeout(() => {
   activateTitle(titleClassName)
-  activateScrollCharger()
-  setScrollCharger()
 }, 0)
