@@ -3,21 +3,20 @@ import "./MapStyles.css"
 export function Map(){
     return (
         <div className="map-container">
-            <div className="map-fill"></div>
             <div className="map-item">      
-                <span className="map-item__content">Init</span>
+                Init
             </div>
             <div className="map-item">      
-                <span className="map-item__content">About</span>
+                About
             </div>
             <div className="map-item">     
-                <span className="map-item__content">Tecnos</span>
+                Tecnos
             </div>
             <div className="map-item">   
-                <span className="map-item__content">Projects</span>
+                Projects
             </div>
             <div className="map-item">    
-                <span className="map-item__content">Contact</span>
+                Contact
             </div>
         </div>
     )

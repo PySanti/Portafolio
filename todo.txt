@@ -1,4 +1,5 @@
-        terminar map
+        Buscar fuente futurista
+        Agregar encogimiento a map
         refactor
         Agregar titulo de la pagina e icono
         Mejorar traducciones

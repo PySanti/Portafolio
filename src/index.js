@@ -54,7 +54,6 @@ export const aboutContainerPARAPH_KEYWORDSClassName     = "about-container__para
 export const mapContainerClassName                      = "map-container"
 export const mapContainerACTIVATEDClassName             = "map-container__ACTIVATED"
 export const mapItemClassName                           = "map-item"
-export const mapContainerFILLClassName                  = "map-fill"
 
 export const mainContainerClassName                     = "main-container"
 

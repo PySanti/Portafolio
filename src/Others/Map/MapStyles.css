@@ -1,64 +1,36 @@
 .map-container{
-    padding: 0;
-    width: 60vw;
-    height: 1vh;
+    --max-blur : 3px;
     position: fixed;
-    top: 120vh;
-    left: 20vw;
+    top: 2vh;
+    left: 33vw;
     display: flex;
-    justify-content: space-around;
-    cursor: pointer;
+    justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0 0 10px var(--base-color);
-    background-color: var(--back-color);
     transition: filter var(--base-animation-timer), top var(--secondary-animation-timer);
-    filter: blur(10px);
     z-index: 9999;
-    overflow: hidden;
-
-}
-
-.map-fill{
-    position: absolute;
-    left: -89%;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    background-color: var(--base-color);
-    z-index: 9;
-    transition: left .5s;
+    filter: blur(3px);
 }
 
 .map-container__ACTIVATED{
     filter: blur(0px);
-    top : 95vh;
 }
+
 
 .map-item{
+    --animation-timing : .2s;
+    cursor: pointer;
     font-size: 1vw;
-    position: relative;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-right:  .5vw;
-    padding-left:   .5vw;
-    padding-top:    .7vh;
-    padding-bottom: .7vh;
-    background-color: var(--base-color);
-    transition: box-shadow var(--secondary-animation-timer), background-color var(--secondary-animation-timer);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
+    margin-left: 1vw;
+    padding: .5vw;
+    border-radius: 10px;
+    transition:  
+    box-shadow var(--animation-timing),
+    filter var(--animation-timing);
 }
 
-
-
-.map-item__content{
-    margin-top: 1vh;
-    position: absolute;
-    opacity: 0;
-    transition: top var(--base-animation-timer), opacity var(--secondary-animation-timer);
+.map-item:hover{
+    --margin-animation : 1vw;
+    box-shadow: 0 0 0 2px var(--base-color);
 }
 
 
