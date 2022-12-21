@@ -12,6 +12,7 @@ import { activateProjects }           from './Pages/Projects/func/activateProjec
 import { activateTitle }              from './GeneralFuncs/activateTitle';
 import { Map } from './Others/Map/Map';
 import { activateMap } from './Others/Map/func/activateMap';
+import { diActivateKeys } from './GeneralFuncs/diActivateKeys';
 
 export const projectsTitleClassName                     = "projects-container__title"
 export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
@@ -88,6 +89,7 @@ export const pagesAnimation = {
 }
 
 setTimeout(() => {
+  diActivateKeys()
   activateTitle(titleClassName)
   activateMap()
 }, 0)
