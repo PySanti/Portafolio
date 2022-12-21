@@ -15,7 +15,6 @@
     opacity: 0;
     font-size: 1vw;
     margin-right: 3vw ;
-    cursor: pointer;
     transition: left 1s, opacity 1s;
 }
 
@@ -25,7 +24,7 @@
     margin: 1vw;
     cursor: pointer;
     color : var(--base-color);
-    transition: text-shadow .5s, margin .5s;
+    transition: text-shadow .5s;
 }
 
 

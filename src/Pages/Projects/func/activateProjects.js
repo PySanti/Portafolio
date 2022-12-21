@@ -19,7 +19,7 @@ function setPI(pi){
         pi.childNodes.forEach(element => {
             element.style.top = "-100%"
             if (element.localName === "video"){
-                element.autoplay = true;
+                element.play();
             }
         });
     })
@@ -28,7 +28,7 @@ function setPI(pi){
         pi.childNodes.forEach(element => {
             element.style.top = "0%"
             if (element.localName === "video"){
-                element.autoplay = false;
+                element.pause();
             }
         });
     })

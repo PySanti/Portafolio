@@ -2,7 +2,6 @@
     box-shadow: 0 0 10px var(--base-color);
     user-select: none;
     text-decoration: none;
-    --margin-hover : 1vw;
     width: 10vw;
     height: 10vh;
     position: relative;
@@ -15,8 +14,7 @@
     transform: scale(1,1);
     transition: 
     transform           var(--secondary-animation-timer),
-    background-color    var(--secondary-animation-timer),
-    opacity             var(--base-animation-timer), 
+    opacity             var(--base-animation-timer)
 }
 
 
@@ -36,7 +34,6 @@
 
 .project-item__video{
     top : 0%;
-    opacity: 1;
     align-items: center;
     position: relative;
     width: inherit;

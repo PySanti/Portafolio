@@ -40,7 +40,6 @@ export const tecnoCountClassName                        = "tecno-count"
 export const tecnoBarClassName                          = "tecno-bar"
 
 
-export const maxScrolling = 5;
 
 export const titleClassName                             = "header-container__text"
 export const titleNAMEClassName                         = "header-container__text__intro-text"

@@ -1,13 +1,12 @@
 .map-container{
-    --max-blur : 3px;
     position: fixed;
     top: 2vh;
     left: 33vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
-    transition: filter var(--base-animation-timer), top var(--secondary-animation-timer);
-    z-index: 9999;
+    transition: filter var(--base-animation-timer);
     filter: blur(3px);
 }
 
@@ -24,8 +23,7 @@
     padding: .5vw;
     border-radius: 10px;
     transition:  
-    box-shadow var(--animation-timing),
-    filter var(--animation-timing);
+    box-shadow var(--animation-timing)
 }
 
 .map-item:hover{

@@ -30,10 +30,8 @@ function renderTecnosBar(tecnosElementsList){
 
 
 function activateTecnosList(){
-    let tecnosContainer = document.getElementsByClassName(tecnosListClassName)[0]
-    let tecnosList = tecnosContainer.childNodes
-    let tecnoCount = undefined
-    let tecnoBar = undefined
+    let tecnosList  = document.getElementsByClassName(tecnosListClassName)[0].childNodes
+    let tecnoCount, tecnoBar  = undefined
     let tecnosElementsList = []
     for (let i = 0; i < tecnosList.length;i++){
         [tecnoCount,tecnoBar] = getElements(tecnosList[i])

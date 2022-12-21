@@ -28,7 +28,6 @@
     padding: 1vw;
     transition: left var(--secondary-animation-timer);
     width: auto;
-    display: flex;
 }
 .tecno-count{
     opacity: 0;

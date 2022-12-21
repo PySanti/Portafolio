@@ -23,12 +23,10 @@ export function setMap(){
     const MAP_ITEMS = document.getElementsByClassName(mapItemClassName);
     const MAP_ITEMS_ARRAY = []
     const MAIN_CONTAINER = document.getElementsByClassName(mainContainerClassName)[0]
-    let CURRENT_MAP_ITEM = undefined
     for (let i = 0; i < MAP_ITEMS.length; i++){
         MAP_ITEMS_ARRAY.push(MAP_ITEMS[i])
     }
     for (let i = 0; i < MAP_ITEMS_ARRAY.length; i++){
-        CURRENT_MAP_ITEM = MAP_ITEMS_ARRAY[i]
-        setMapItem(CURRENT_MAP_ITEM, MAP_ITEMS_ARRAY, MAIN_CONTAINER)
+        setMapItem(MAP_ITEMS_ARRAY[i], MAP_ITEMS_ARRAY, MAIN_CONTAINER)
     }
 }

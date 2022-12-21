@@ -43,7 +43,6 @@
 .title__selected-text{
   font-family: inherit;
   opacity: 0;
-  cursor: pointer;
   margin : 0;
   transition: 
   margin      var(--secondary-animation-timer), 

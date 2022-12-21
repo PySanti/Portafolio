@@ -3,4 +3,7 @@ export function diActivateKeys(){
     HTML_ELEMENT.addEventListener("keydown", (e)=>{
         e.preventDefault()
     })
+    HTML_ELEMENT.addEventListener("wheel", (e)=>{
+        e.preventDefault()
+    })
 }
