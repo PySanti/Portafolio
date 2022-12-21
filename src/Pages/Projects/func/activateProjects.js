@@ -3,8 +3,8 @@ import {
     projectItem_ACTIVATEDClassName, 
     projectItem_SHOWEDClassName, 
     projectsTitleClassName, 
-} from "../..";
-import { activateTitle } from "../../generalFuncs/activateTitle";
+} from "../../../index";
+import { activateTitle } from "../../../GeneralFuncs/activateTitle";
 
 const timer = 100
 let i = 0

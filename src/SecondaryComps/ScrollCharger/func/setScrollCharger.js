@@ -1,7 +1,7 @@
-import { pagesAnimation } from "../.."
-import { scrollChargerClassName } from "../.."
-import { maxScrolling } from "../.."
-import { getScrollCount, setScrollCount } from "../../About/func/updateScrollCount"
+import { pagesAnimation }           from "../../../index"
+import { scrollChargerClassName }   from "../../../index"
+import { maxScrolling }             from "../../../index"
+import { getScrollCount, setScrollCount } from "./updateScrollCount"
 
 
 

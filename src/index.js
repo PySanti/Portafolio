@@ -1,18 +1,18 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Title } from './Title/Title';
-import { About } from './About/About';
-import {Contact} from "./Contact/Contact"
-import { Projects } from './Projects/Projects';
-import { Tecnos } from './Tecnos/Tecnos';
-import { ScrollCharger } from './ScrollCharger/ScrollCharger';
-import { setScrollCharger } from './ScrollCharger/func/setScrollCharger';
-import { activateScrollCharger } from './ScrollCharger/func/activateScrollCharger';
-import { activateAboutContainer } from './About/func/activateAboutContainer';
-import { activateTecnos } from './Tecnos/func/activateTecnos';
-import { activateContact } from './Contact/func/activateContact';
-import { activateProjects } from './Projects/func/activateProjects';
-import { activateTitle } from './generalFuncs/activateTitle';
+import { Title }                      from './Pages/Title/Title';
+import { About }                      from './Pages/About/About';
+import {Contact}                      from "./Pages/Contact/Contact"
+import { Projects }                   from './Pages/Projects/Projects';
+import { Tecnos }                     from './Pages/Tecnos/Tecnos';
+import { ScrollCharger }              from './SecondaryComps/ScrollCharger/ScrollCharger';
+import { setScrollCharger }           from './SecondaryComps/ScrollCharger/func/setScrollCharger';
+import { activateScrollCharger }      from './SecondaryComps/ScrollCharger/func/activateScrollCharger';
+import { activateAboutContainer }     from './Pages/About/func/activateAboutContainer';
+import { activateTecnos }             from './Pages/Tecnos/func/activateTecnos';
+import { activateContact }            from './Pages/Contact/func/activateContact';
+import { activateProjects }           from './Pages/Projects/func/activateProjects';
+import { activateTitle }              from './GeneralFuncs/activateTitle';
 
 export const projectsTitleClassName                     = "projects-container__title"
 export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"

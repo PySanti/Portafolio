@@ -1,8 +1,8 @@
-        refactor
+        Agregar modalidad de seleccioon de paginas por mapa
+        refactor, clasificacion de carpetas de componentes para mayor escalabilidad
         Agregar titulo de la pagina e icono
         Mejorar traducciones
         Agregar boton de traduccion
-        Agregar tutorial de uso de seccion de projects
         Agregar boton de copiado en la parte del contacto
         Agregar tutorial de uso en la title
         responsive

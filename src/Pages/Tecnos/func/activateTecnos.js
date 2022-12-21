@@ -1,5 +1,5 @@
-import { tecnosTitleClassName, tecnosListClassName, tecnoCountClassName, tecnoBarClassName } from "../.."
-import { activateTitle } from "../../generalFuncs/activateTitle"
+import { tecnosTitleClassName, tecnosListClassName, tecnoCountClassName, tecnoBarClassName } from "../../../index"
+import { activateTitle } from "../../../GeneralFuncs/activateTitle"
 
 
 function getElements(tecnoItem){

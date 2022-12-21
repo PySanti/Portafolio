@@ -1,4 +1,4 @@
-import {  scrollChargerClassName } from "../..";
+import {  scrollChargerClassName } from "../../ScrollCharger/../../index";
 export function activateScrollCharger(){
     const scrollCharger = document.getElementsByClassName(scrollChargerClassName)[0]
 

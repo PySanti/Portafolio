@@ -1,5 +1,5 @@
-import { aboutContainerPARAPHClassName, aboutContainerTITLEClassName } from "../.."
-import { activateTitle } from "../../generalFuncs/activateTitle";
+import { aboutContainerPARAPHClassName, aboutContainerTITLEClassName } from "../../../index"
+import { activateTitle } from "../../../GeneralFuncs/activateTitle";
 
 function activateAboutContainerParaph(){
     const aboutContainer = document.getElementsByClassName(aboutContainerPARAPHClassName)[0]

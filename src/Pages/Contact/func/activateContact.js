@@ -2,8 +2,8 @@ import {
     contactContentPARAPH_P1ClassName, 
     contactContentPARAPH_P2ClassName, 
     contactContentTITLEClassName} 
-    from "../..";
-import { activateTitle } from "../../generalFuncs/activateTitle";
+    from "../../../index";
+import { activateTitle } from "../../../GeneralFuncs/activateTitle";
 
 function activateContactParaph(){
     const paraphP1 = document.getElementsByClassName(contactContentPARAPH_P1ClassName)[0] 
