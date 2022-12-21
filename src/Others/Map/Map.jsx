@@ -3,6 +3,7 @@ import "./MapStyles.css"
 export function Map(){
     return (
         <div className="map-container">
+            <div className="map-fill"></div>
             <div className="map-item">      
                 <span className="map-item__content">Init</span>
             </div>

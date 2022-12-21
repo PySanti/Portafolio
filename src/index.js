@@ -10,9 +10,9 @@ import { activateTecnos }             from './Pages/Tecnos/func/activateTecnos';
 import { activateContact }            from './Pages/Contact/func/activateContact';
 import { activateProjects }           from './Pages/Projects/func/activateProjects';
 import { activateTitle }              from './GeneralFuncs/activateTitle';
-import { Map } from './Others/Map/Map';
-import { activateMap } from './Others/Map/func/activateMap';
-import { diActivateKeys } from './GeneralFuncs/diActivateKeys';
+import { Map }                        from './Others/Map/Map';
+import { activateMap }                from './Others/Map/func/activateMap';
+import { diActivateKeys }             from './GeneralFuncs/diActivateKeys';
 
 export const projectsTitleClassName                     = "projects-container__title"
 export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
@@ -54,6 +54,9 @@ export const aboutContainerPARAPH_KEYWORDSClassName     = "about-container__para
 export const mapContainerClassName                      = "map-container"
 export const mapContainerACTIVATEDClassName             = "map-container__ACTIVATED"
 export const mapItemClassName                           = "map-item"
+export const mapContainerFILLClassName                  = "map-fill"
+
+export const mainContainerClassName                     = "main-container"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
