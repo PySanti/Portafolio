@@ -1,13 +1,21 @@
 .map-container{
     background-color: var(--base-color);
     position: fixed;
-    top: 90vh;
+    top: 120vh;
     left: 33vw;
     max-height: 1vh;
     display: flex;
     justify-content: space-around;
     cursor: pointer;
     border-radius: 20px;
+    box-shadow: 0 0 10px var(--base-color);
+    transition: filter var(--base-animation-timer), top var(--secondary-animation-timer);
+    filter: blur(10px);
+}
+
+.map-container__ACTIVATED{
+    filter: blur(0px);
+    top : 95vh;
 }
 
 .map-item{
@@ -18,7 +26,7 @@
     padding: 10px;
     border-radius: 100%;
     background-color: var(--base-color);
-    transition: transform .5s;
+    transition: transform var(--secondary-animation-timer);
     display: flex;
     flex-direction: column;
     align-items: center;

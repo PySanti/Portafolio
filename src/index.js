@@ -11,6 +11,7 @@ import { activateContact }            from './Pages/Contact/func/activateContact
 import { activateProjects }           from './Pages/Projects/func/activateProjects';
 import { activateTitle }              from './GeneralFuncs/activateTitle';
 import { Map } from './Others/Map/Map';
+import { activateMap } from './Others/Map/func/activateMap';
 
 export const projectsTitleClassName                     = "projects-container__title"
 export const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
@@ -49,6 +50,10 @@ export const aboutContainerTITLE_COMPClassName          = "about-container__titl
 export const aboutContainerPARAPHClassName              = "about-container__paraph"
 export const aboutContainerPARAPH_KEYWORDSClassName     = "about-container__paraph__u"
 
+export const mapContainerClassName                      = "map-container"
+export const mapContainerACTIVATEDClassName             = "map-container__ACTIVATED"
+export const mapItemClassName                           = "map-item"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -84,4 +89,5 @@ export const pagesAnimation = {
 
 setTimeout(() => {
   activateTitle(titleClassName)
+  activateMap()
 }, 0)
