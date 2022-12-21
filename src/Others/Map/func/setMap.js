@@ -23,7 +23,7 @@ function moveFill(newLeft, fill){
 
 function setMapItem(MAP_ITEM, MAP_ITEM_LIST, MAP_FILL, MAIN_CONTAINER){
     let index = MAP_ITEM_LIST.indexOf(MAP_ITEM)
-    const newLeft = 120-(index*20)
+    const newLeft = 89-(index*20)
     MAP_ITEM.addEventListener("click", (e) =>{
         moveMainContainer(index, MAIN_CONTAINER)
         activateCurrentPage(index)
