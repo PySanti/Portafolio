@@ -1,0 +1,22 @@
+.copy-btn{
+    width: 4vw;
+    height: 3vh;
+    position: relative;
+    background-color: var(--base-color);
+    opacity: 0;
+    top: 20vh;
+    border-radius: 8px;
+    margin-top:2vh;
+    margin-left: 20vw;
+    transition : transform .5s, opacity var(--base-animation-timer), top var(--secondary-animation-timer);
+    cursor: pointer;
+}
+
+.copy-btn__ACTIVATED{
+    top: 0vw;
+    opacity: 1;
+}
+
+.copy-btn:hover{
+    transform: scale(1.5,1.5);
+}

@@ -56,6 +56,9 @@ export const mapItemClassName                           = "map-item"
 
 export const mainContainerClassName                     = "main-container"
 
+export const copyBtnClassName                           = "copy-btn"
+export const copyBtnClassNameACTIVATED                  = "copy-btn__ACTIVATED"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(

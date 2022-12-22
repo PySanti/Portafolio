@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactStyles.css"
+import { CopyBtn } from "../../Others/CopyBtn/CopyBtn";
 
 
 export function Contact(){
@@ -11,6 +12,7 @@ export function Contact(){
                 @
                 <span className="contact-content__paraph__p2 paraph-part">gmail.com</span>
             </p>
+            <CopyBtn/>
         </footer>
     )
 }

@@ -4,6 +4,7 @@ import {
     contactContentTITLEClassName} 
     from "../../../index";
 import { activateTitle } from "../../../GeneralFuncs/activateTitle";
+import { activateCopyBtn } from "../../../Others/CopyBtn/func/activateCopyBtn";
 
 function activateContactParaph(){
     const paraphP1 = document.getElementsByClassName(contactContentPARAPH_P1ClassName)[0] 
@@ -21,4 +22,5 @@ function activateContactParaph(){
 export function activateContact(){
     activateContactParaph()
     activateTitle(contactContentTITLEClassName)
+    activateCopyBtn()
 }

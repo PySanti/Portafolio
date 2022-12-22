@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectStyles.css"
-import { ProjectItem } from "./ProjectItem/ProjectItem";
+import {ProjectItem} from "../../Others/ProjectItem/ProjectItem"
 
 export function Projects(props){
     return (
