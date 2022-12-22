@@ -34,3 +34,8 @@
     align-items: center;
 }
 
+@media (max-width : 900px){
+    .paraph-part{
+        font-size: 3vw;
+    }
+}

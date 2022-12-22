@@ -1,7 +1,9 @@
 .map-container{
+    --self-width : 30%;
     position: fixed;
+    width: var(--self-width);
     top: 2vh;
-    left: 33vw;
+    left: calc(50% - var(--self-width)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,5 +33,11 @@
     box-shadow: 0 0 0 2px var(--base-color);
 }
 
-
-
+@media (max-width : 900px) {
+    .map-item{
+        font-size: 3vw;
+    }
+    .map-container{
+        --self-width : 60%;
+    }
+}

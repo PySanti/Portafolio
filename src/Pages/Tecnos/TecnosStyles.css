@@ -53,3 +53,13 @@
     left: -100%;
     transition: left var(--secondary-animation-timer);
 }
+
+.tecno-name{
+    font-size: 1vw;
+}
+
+@media (max-width : 900px){
+    .tecno-name{
+        font-size: var(--responsive-normal-font-size);
+    }
+}

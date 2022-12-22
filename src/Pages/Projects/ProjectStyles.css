@@ -24,3 +24,14 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width : 900px){
+    .projects-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .projects-container__title{
+        margin-bottom: 2vh;
+    }
+}

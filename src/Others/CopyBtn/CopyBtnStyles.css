@@ -20,3 +20,11 @@
 .copy-btn:hover{
     transform: scale(1.5,1.5);
 }
+
+@media (max-width : 900px){
+    .copy-btn{
+        width: 7vw;
+        height: 2vh;
+        margin-left: 40vw;
+    }
+}

@@ -33,3 +33,8 @@
 }
 
 
+@media (max-width : 900px){
+    .about-container__paraph{
+        font-size: var(--responsive-normal-font-size);
+    }
+}

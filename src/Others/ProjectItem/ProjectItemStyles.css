@@ -49,3 +49,14 @@
 .project-item__SHOWED{
     transform: scale(3,3);
 }
+
+@media (max-width : 900px){
+    .project-item__name{
+        font-size: 2vw;
+    }
+    .project-item{
+        height: 8vh;
+        width: 20vw;
+        border-radius: 10px;
+    }
+}

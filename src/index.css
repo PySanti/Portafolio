@@ -14,6 +14,7 @@
   --base-color : #551eec;
   --base-animation-timer : 3s;
   --secondary-animation-timer : 1s;
+  --responsive-normal-font-size : 2vw;
   max-height: 100vh;
 }
 
@@ -42,6 +43,7 @@
 
 .title__selected-text{
   font-family: inherit;
+  font-size: inherit;
   opacity: 0;
   margin : 0;
   transition: 
@@ -65,3 +67,9 @@
   background: linear-gradient(to right, #fff , var(--back-color) 30%, #fff );
 }
 
+@media (max-width : 900px){
+
+  .title{
+    font-size: 5vw;
+  }
+}
