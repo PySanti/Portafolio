@@ -1,10 +1,7 @@
         Buscar fuente futurista
-        Agregar encogimiento a map
-        refactor
         Agregar titulo de la pagina e icono
         Mejorar traducciones
         Agregar boton de traduccion
-        Agregar boton de copiado en la parte del contacto
         responsive
         Modificar readme de todos los proyectos y hacerlos portables
         Estar pendiente con el responsive y el peso de la pagina
