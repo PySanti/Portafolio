@@ -41,6 +41,7 @@
     padding: .5vw;
     overflow: hidden;
     filter: blur(10px);
+    box-shadow: var(--base-shadow);
     transition : filter var(--secondary-animation-timer);
 }
 .tecno-bar-fill{

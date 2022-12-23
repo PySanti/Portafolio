@@ -29,7 +29,7 @@
 
 
 .about-container__paraph__u:hover{
-    text-shadow: 0 0 10px var(--base-color);
+    text-shadow: var(--base-shadow);
 }
 
 

@@ -1,5 +1,5 @@
 .project-item{
-    box-shadow: 0 0 10px var(--base-color);
+    box-shadow: var(--base-shadow);
     user-select: none;
     text-decoration: none;
     width: 10vw;
