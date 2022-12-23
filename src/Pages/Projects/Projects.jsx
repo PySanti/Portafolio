@@ -8,13 +8,12 @@ export function Projects(props){
             <h2 className="projects-container__title title">My <span className="projects-container__title__made title__selected-text"> projects </span></h2>
             <div className="projects-container__projects_list">
                 <ProjectItem 
-                name="Kill the madafaka" 
+                name="Geome Man" 
                 context="This is a game that i made in 2021, i last like 6 months doing this. This is my first and last 'big game project'. It has not been finished yet." 
                 repoLink="https://github.com/PySanti/kill-the-madafaka.git"
                 videoFileName ="./projectVideos/ktm.mp4"
                 id ="pi-1"
                 />
-
                 <ProjectItem 
                 name="Bouncing Ball" 
                 context="This was one of my firts PyGame projects. It is just a ball that's bouncing hehe." 
@@ -30,14 +29,14 @@ export function Projects(props){
                 id ="pi-3"
                 />
                 <ProjectItem 
-                name="Facebook initial page clon" 
+                name="Facebook clon" 
                 context="This is a clon of the initial page facebook website" 
                 repoLink="https://github.com/PySanti/InitialFacebookPageClon.git"
                 videoFileName ="./projectVideos/fip.mp4"
                 id ="pi-4"
                 />
                 <ProjectItem 
-                name="Firefox initial page clon" 
+                name="Firefox clon" 
                 context="This is a clon of the initial page firefox website" 
                 repoLink="https://github.com/PySanti/InitialFirefoxPageClon.git"
                 videoFileName ="./projectVideos/ffip.mp4"
@@ -58,14 +57,14 @@ export function Projects(props){
                 id ="pi-7"
                 />
                 <ProjectItem 
-                name="MegaKiller" 
+                name="Mega Killer" 
                 context="This was the first 'game' I made in PyGame, based on Megaman. It was never finished :(" 
                 repoLink="https://github.com/PySanti/megakiller.git"
                 videoFileName ="./projectVideos/mk.mp4"
                 id ="pi-8"
                 />
                 <ProjectItem 
-                name="Moving Madafaka Rect" 
+                name="Hypno Rect" 
                 context="Visual effect of a moving rectangle. Made with Python and PyGame." 
                 repoLink="https://github.com/PySanti/moving-madafaka-rect.git"
                 videoFileName ="./projectVideos/mmr.mp4"
@@ -79,7 +78,7 @@ export function Projects(props){
                 id ="pi-10"
                 />
                 <ProjectItem 
-                name="SpriteTester" 
+                name="Sprite Tester" 
                 context="Sprite Tester is a tool created for testing sprites designed for simple games. The test drivers are programmed in the terminal." 
                 repoLink="https://github.com/PySanti/SpriteTester.git"
                 videoFileName ="./projectVideos/st.mp4"
