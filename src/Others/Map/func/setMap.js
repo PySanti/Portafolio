@@ -1,4 +1,13 @@
-import {   mainContainerClassName, mapItemClassName, pagesAnimation } from "../../..";
+import {   mainContainerClassName, mapItemClassName, mapItemSelectedClassName, pagesAnimation } from "../../..";
+
+function setMapItemSelection(currentMapItem, mapItemList){
+    for (let i = 0; i < mapItemList.length;i++){
+        if (mapItemList[i].classList.contains(mapItemSelectedClassName)){
+            mapItemList[i].classList.remove(mapItemSelectedClassName)
+        }
+    }
+    currentMapItem.classList.add(mapItemSelectedClassName)
+}
 
 function moveMainContainer(currentPageIndex, mainContainer){
     mainContainer.style.left = `${currentPageIndex*-100}vw`
@@ -16,6 +25,7 @@ function setMapItem(MAP_ITEM, MAP_ITEM_LIST, MAIN_CONTAINER){
     MAP_ITEM.addEventListener("click", (e) =>{
         moveMainContainer(index, MAIN_CONTAINER)
         activateCurrentPage(index)
+        setMapItemSelection(MAP_ITEM, MAP_ITEM_LIST)
     })
 }
 

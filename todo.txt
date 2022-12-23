@@ -1,3 +1,4 @@
+        Hacer que la pagina actual se marque en el map
         Buscar fuente futurista
         Agregar titulo de la pagina e icono
         Mejorar traducciones
@@ -5,3 +6,4 @@
         responsive
         Modificar readme de todos los proyectos y hacerlos portables
         Estar pendiente con el responsive y el peso de la pagina
+        Terminar boton de copiado
