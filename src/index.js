@@ -26,6 +26,7 @@ export const projectItem_ACTIVATEDClassName             = "project-item__ACTIVAT
 export const projectItem_SHOWEDClassName                = "project-item__SHOWED"
 export const projectsContainerClassName                 = "projects-container"
 
+export const EMAIL                                      = "santiagodeandrade4@gmail.com"
 export const contactContentClassName                    = "contact-content"
 export const contactContentTITLEClassName               = "contact-content__title"
 export const contactContentTITLE_MEClassName            = "contact-content__title__me"
@@ -59,6 +60,7 @@ export const mainContainerClassName                     = "main-container"
 
 export const copyBtnClassName                           = "copy-btn"
 export const copyBtnClassNameACTIVATED                  = "copy-btn__ACTIVATED"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
