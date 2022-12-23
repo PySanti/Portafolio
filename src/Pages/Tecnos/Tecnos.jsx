@@ -28,13 +28,6 @@ export function Tecnos(props){
                     </div>
                 </li>
                 <li className="tecnos-container__list__item"> 
-                    <span className="tecno-name">Pascal    </span>
-                    <span className="tecno-count">60    </span>
-                    <div className="tecno-bar">
-                        <div className="tecno-bar-fill"></div>
-                    </div>
-                </li>
-                <li className="tecnos-container__list__item"> 
                     <span className="tecno-name">JavaScript</span>
                     <span className="tecno-count">90    </span>
                     <div className="tecno-bar">
