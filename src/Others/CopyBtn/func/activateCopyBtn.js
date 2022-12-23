@@ -21,7 +21,6 @@ function setCopyBtn(copyBtn){
 
 export function activateCopyBtn(){
     const copyBtn = document.getElementsByClassName(copyBtnClassName)[0];
-    console.log(copyBtn)
     setTimeout(()=>{
         copyBtn.classList.add(copyBtnClassNameACTIVATED)
     },1000)
