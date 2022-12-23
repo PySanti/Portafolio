@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@100;400&family=Sacramento&display=swap');@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@100;400&family=Sacramento&display=swap');
 
 *{
+  color : #fff;
   margin: 0;
   padding: 0;
   user-select: none;
@@ -10,8 +11,9 @@
 #root{
   overflow-x: hidden;
   overflow-y: hidden;
-  --back-color : #a09999;
-  --base-color : #551eec;
+  --side-back-color : rgb(53, 53, 53);
+  --back-color : #1b1b1b;
+  --base-color : #ff7b00;
   --base-animation-timer : 3s;
   --secondary-animation-timer : 1s;
   --responsive-normal-font-size : 2vw;
@@ -66,7 +68,7 @@
   position: relative;
   left: 0vw;
   transition: left var(--secondary-animation-timer);
-  background: linear-gradient(to right, #fff , var(--back-color) 30%, #fff );
+  background: linear-gradient(to right, var(--side-back-color) , var(--back-color) 30%, var(--side-back-color) );
 }
 
 @media (max-width : 900px){
