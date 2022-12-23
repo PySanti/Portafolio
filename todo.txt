@@ -1,7 +1,7 @@
         Seleccionar color finalmente (serio y moderno)
-        Resumir about me (ingles)
-        Animar titulo
         Refactorizar
+        Arreglar error de map al seleccionar
+        Aumentar el espacio en el responsive
 
 
         Agregar titulo de la pagina e icono

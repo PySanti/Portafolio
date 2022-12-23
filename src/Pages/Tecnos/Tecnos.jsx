@@ -4,7 +4,7 @@ import "./TecnosStyles.css"
 export function Tecnos(props){
     return (
         <section className="tecnos-container">
-            <h2 className="tecnos-container__title title">Tecnos that i <span className="tecnos-container__title__dom title__selected-text"> domain </span></h2>
+            <h2 className="tecnos-container__title title"> My<span className="tecnos-container__title__dom title__selected-text"> Skills</span></h2>
             <ul className="tecnos-container__list">
                 <li className="tecnos-container__list__item"> 
                     <span className="tecno-name">Python    </span>
