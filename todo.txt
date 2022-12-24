@@ -5,3 +5,4 @@
         
         Estar pendiente con el responsive y el peso de la pagina
         Minificar??
+        subir a netlify

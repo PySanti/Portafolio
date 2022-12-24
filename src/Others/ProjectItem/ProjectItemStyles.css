@@ -47,7 +47,7 @@
 }
 
 .project-item__SHOWED{
-    transform: scale(3,3);
+    transform: scale(2,2);
 }
 
 @media (max-width : 900px){
