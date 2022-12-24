@@ -34,4 +34,8 @@
     .projects-container__title{
         margin-bottom: 2vh;
     }
+
+    .projects-container__projects_list{
+        gap: 2vw;
+    }
 }

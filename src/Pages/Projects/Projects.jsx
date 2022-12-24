@@ -5,7 +5,7 @@ import {ProjectItem} from "../../Others/ProjectItem/ProjectItem"
 export function Projects(props){
     return (
         <section className="projects-container">
-            <h2 className="projects-container__title title">My <span className="projects-container__title__made title__selected-text"> projects </span></h2>
+            <h2 className="projects-container__title title">My <span className="projects-container__title__made title__selected-text"> Projects </span></h2>
             <div className="projects-container__projects_list">
                 <ProjectItem 
                 name="Geome Man" 

@@ -1,8 +1,7 @@
         Refactorizar
-        Aumentar el espacio en el responsive
         Agregar titulo de la pagina e icono
-        responsive
         Modificar readme de todos los proyectos y hacerlos portables
+
+        
         Estar pendiente con el responsive y el peso de la pagina
-        Descargar fuentes
         Minificar??

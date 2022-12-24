@@ -38,9 +38,10 @@
 
 @media (max-width : 900px) {
     .map-item{
+        padding: 2vw;
         font-size: 3vw;
     }
     .map-container{
-        --self-width : 60%;
+        --self-width : 80%;
     }
 }
