@@ -4,13 +4,13 @@ export function Map(){
     return (
         <div className="map-container">
             <div className="map-item">      
-                Init
+                Home
             </div>
             <div className="map-item">      
                 About
             </div>
             <div className="map-item">     
-                Tecnos
+                Skills
             </div>
             <div className="map-item">   
                 Projects
