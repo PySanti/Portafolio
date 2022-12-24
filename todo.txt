@@ -2,6 +2,12 @@
         Agregar titulo de la pagina e icono
         Modificar readme de todos los proyectos y hacerlos portables
 
+       Release
+       tutorial de netlify
+       tutorial de google tools
+       Quitar icono
+
+
         
         Estar pendiente con el responsive y el peso de la pagina
         Minificar??
