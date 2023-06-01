@@ -1,8 +1,9 @@
 
 .tecnos-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 .tecnos-container *{
     display: flex;
@@ -36,6 +37,16 @@
     .tecno-name{
         font-size: var(--responsive-normal-font-size);
     }
+    .tecnos-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .tecnos-container__list__item{
+        justify-content: center;
+    }
+
 }
 .tecno_activated{
     left: 0vw;

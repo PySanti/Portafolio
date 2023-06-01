@@ -4,16 +4,16 @@ import { activateTitle } from "../../../GeneralFuncs/activateTitle"
 function setTecnosCheck(current_tecno, current_timer){
     setTimeout(()=>{
         current_tecno.children[0].classList.add('tecno_check__activated')
-    }, current_timer+100)
+    }, current_timer)
 }
 
 
 function activateTecnosSkills(tecnos,current_tecno){
     setTimeout(()=>{
         tecnos[current_tecno].classList.add(activatedTecnosClassName)
-        setTecnosCheck(tecnos[current_tecno], current_tecno*200)
+        setTecnosCheck(tecnos[current_tecno], current_tecno*100)
     }, current_tecno*200)
-    if (current_tecno < tecnos.length){
+    if (current_tecno+1 < tecnos.length){
         activateTecnosSkills(tecnos, current_tecno+1)
     }
 }

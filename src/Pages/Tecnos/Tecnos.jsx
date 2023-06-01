@@ -23,7 +23,7 @@ export function Tecnos(props){
                 {
                     TECNOS_LIST.map((tecno) =>{
                         return (
-                            <li className="tecnos-container__list__item">
+                            <li key={tecno} className="tecnos-container__list__item">
                                 <span className="tecno_check">✓</span>
                                 <span className="tecno_name">{tecno}</span>
                             </li>
