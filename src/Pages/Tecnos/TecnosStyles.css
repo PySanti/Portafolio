@@ -15,6 +15,7 @@
 .tecnos-container__title{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 
@@ -33,21 +34,6 @@
     position: relative;
     left: -50vw;
 }
-@media (max-width : 900px){
-    .tecno-name{
-        font-size: var(--responsive-normal-font-size);
-    }
-    .tecnos-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .tecnos-container__list__item{
-        justify-content: center;
-    }
-
-}
 .tecno_activated{
     left: 0vw;
     opacity: 1;
@@ -62,4 +48,22 @@
 .tecno_check__activated{
     opacity: 1;
     padding-right:1vw ;
+}
+@media (max-width : 900px){
+    .tecno_check{
+        font-size :3.5vw;
+    }
+    .tecno_name{
+        font-size: var(--responsive-normal-font-size);
+    }
+    .tecnos-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tecnos-container__title{
+        margin-bottom: 10vh;
+    }
+
 }
