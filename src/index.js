@@ -37,8 +37,8 @@ export const contactContentPARAPH_P2ClassName           = "contact-content__para
 export const tecnosTitleClassName                       = "tecnos-container__title"
 export const tenocsTitleDOMClassName                    = "tecnos-container__title__dom"
 export const tecnosListClassName                        = "tecnos-container__list"
-export const tecnoCountClassName                        = "tecno-count"
-export const tecnoBarClassName                          = "tecno-bar"
+export const activatedTecnosClassName                   = "tecno_activated"
+
 
 
 
