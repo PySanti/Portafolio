@@ -51,7 +51,7 @@
 }
 @media (max-width : 900px){
     .tecno_check{
-        font-size :3vw;
+        font-size :2vw;
     }
     .tecno_name{
         font-size: var(--responsive-normal-font-size);

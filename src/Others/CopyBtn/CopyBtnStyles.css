@@ -7,6 +7,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    align-items: center;
     position: relative;
     opacity: 0;
     top: 20vh;
@@ -23,7 +24,7 @@
 }
 
 .copy-btn__img:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.2,1.2);
 }
 
 .success-msg{
@@ -51,7 +52,7 @@
         font-size: 2vw;
     }
     .copy-btn{
-        padding: 3vw;
+        padding: 4vw;
     }
 }
 
