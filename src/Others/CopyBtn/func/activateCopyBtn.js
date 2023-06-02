@@ -1,4 +1,4 @@
-import { EMAIL, copyBtnClassName, copyBtnClassNameACTIVATED } from "../../..";
+import { EMAIL, copyBtnClassName, copyBtnClassNameACTIVATED, copyBtnSuccessMsg, copyBtnSuccessMsgACTIVATED } from "../../..";
 
 
 function copyText(text){
@@ -12,11 +12,21 @@ function copyText(text){
 }
 
 
+function activateSuccessMsg(){
+    let msg = document.getElementsByClassName(copyBtnSuccessMsg)[0]
+    msg.classList.add(copyBtnSuccessMsgACTIVATED)
+    setTimeout(()=>{
+        msg.classList.remove(copyBtnSuccessMsgACTIVATED)
+    }, 1000)
+}
 function setCopyBtn(copyBtn){
     copyBtn.addEventListener("click",()=>{
         copyText(EMAIL)
+        activateSuccessMsg()
     })
 }
+
+
 
 
 export function activateCopyBtn(){

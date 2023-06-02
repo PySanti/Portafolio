@@ -60,6 +60,8 @@ export const mainContainerClassName                     = "main-container"
 
 export const copyBtnClassName                           = "copy-btn"
 export const copyBtnClassNameACTIVATED                  = "copy-btn__ACTIVATED"
+export const copyBtnSuccessMsg                          = "success-msg"
+export const copyBtnSuccessMsgACTIVATED                 = "success-msg__ACTIVATED"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

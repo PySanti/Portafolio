@@ -1,14 +1,20 @@
+.copy-btn__img{
+    transition : transform .5s;
+    z-index: 99;
+}
 .copy-btn{
-    width: 4vw;
-    height: 3vh;
+    padding: 1vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
     position: relative;
     opacity: 0;
     top: 20vh;
     border-radius: 8px;
     margin-top:2vh;
     margin-left: 20vw;
-    transition : transform .5s, opacity var(--base-animation-timer), top var(--secondary-animation-timer);
     cursor: pointer;
+    transition: opacity var(--base-animation-timer), top var(--secondary-animation-timer);
 }
 
 .copy-btn__ACTIVATED{
@@ -16,8 +22,22 @@
     opacity: 1;
 }
 
-.copy-btn:hover{
+.copy-btn__img:hover{
     transform: scale(1.5,1.5);
+}
+
+.success-msg{
+    font-size: .8vw;
+    opacity: 0;
+    position: relative;
+    left: -10vw;
+    transition: left .6s, opacity .2s;
+    z-index: 9;
+}
+
+.success-msg__ACTIVATED{
+    opacity: 1;
+    left: 1vw;
 }
 
 
