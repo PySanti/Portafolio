@@ -6,15 +6,17 @@ export function Tecnos(props){
         'Python',
         'Django',
         'Django Rest Framework',
+        'Database Design',
         'MySQL',
         'PostgreSQL',
         'JavaScript',
         'CSS',
+        'Responsive Web Desing',
         'HTML',
         'React',
         'PyGame', 
         'C',
-        'Git'
+        'Git',
     ]
     return (
         <section className="tecnos-container">
