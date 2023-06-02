@@ -51,7 +51,7 @@
 }
 @media (max-width : 900px){
     .tecno_check{
-        font-size :3.5vw;
+        font-size :3vw;
     }
     .tecno_name{
         font-size: var(--responsive-normal-font-size);
@@ -65,5 +65,4 @@
     .tecnos-container__title{
         margin-bottom: 10vh;
     }
-
 }
