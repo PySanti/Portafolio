@@ -47,5 +47,11 @@
         height: 2vh;
         margin-left: 40vw;
     }
+    .success-msg{
+        font-size: 2vw;
+    }
+    .copy-btn{
+        padding: 3vw;
+    }
 }
 
