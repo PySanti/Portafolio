@@ -6,7 +6,7 @@ export function activateTitle(pageTitleClassName){
         pageTitle.style.opacity = "1"
         if (pageTitle.hasChildNodes()){
             setTimeout(()=>{
-                pageTitle.children[0].style.margin = "2vw"
+                pageTitle.children[0].style.margin = ".5vw"
                 pageTitle.children[0].style.color = "var(--base-color)"
                 pageTitle.children[0].style.textShadow = "var(--base-shadow)"
                 pageTitle.children[0].style.opacity = "1"
