@@ -11,7 +11,7 @@ export function About(props){
             <a  href="https://elucabista.com/2022/06/09/qs-world-university-ranking-2023-la-ucab-sigue-siendo-la-mejor-universidad-privada-venezuela/" target="__blank"  className="about-container__paraph__u selected-text">Universidad Catolica Andres Bello</a>,
             I have more than two years of programming experience, gaining knowledge independently.  
             I have very deep knowledge in very specific technologies and I am able to realize any project in the most optimal.
-            I have an intermediate knowledge of English and I am able to communicate perfectly in English. 
+            I have an intermediate knowledge of English and I am able to communicate perfectly. 
         </p>
     </section>
 )
