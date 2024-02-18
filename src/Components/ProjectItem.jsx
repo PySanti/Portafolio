@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./ProjectItemStyles.css"
+import "../styles/ProjectItemStyles.css"
 
 export function ProjectItem({name, videoFileName, repoLink, id}){
     return (

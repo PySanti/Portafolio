@@ -1,10 +1,80 @@
+import {useEffect ,useRef} from 'react'
 import React from "react";
-import "./ProjectStyles.css"
-import {ProjectItem} from "../../Others/ProjectItem/ProjectItem"
+import "../styles/ProjectStyles.css"
+import {ProjectItem} from "../Components/ProjectItem"
+import { activateTitle } from "../utils/activateTitle";
 
 export function Projects(props){
+
+    const projectsTitleClassName                     = "projects-container__title"
+    const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
+    const projectsContainerTITLE_UN_SHOWEDClassName  = "projects-container__title__UNSHOWED"
+    const projectsTitleMADEClassName                 = "projects-container__title__made"
+    const projectsTitleMADE__ACTIVATEDClassName      = "projects-container__title__made__ACTIVATED"
+
+
+    const projectItemClassName                       = "project-item"
+    const projectItemContainerClassName              = "projects-container__projects_list"
+    const projectItem_ACTIVATEDClassName             = "project-item__ACTIVATED"
+    const projectItem_SHOWEDClassName                = "project-item__SHOWED"
+    const projectsContainerClassName                 = "projects-container"
+
+    let projectsContainerRef = useRef()
+    const timer = 100
+    let i = 0
+    let currentZindex = 1;
+    const setPI = (pi)=>{
+        pi.addEventListener("mouseenter", (e)=>{
+            currentZindex+=1
+            pi.style.zIndex = currentZindex
+            pi.classList.add(projectItem_SHOWEDClassName)
+            pi.childNodes.forEach(element => {
+                element.style.top = "-100%"
+                if (element.localName === "video"){
+                    element.play();
+                }
+            });
+        })
+        pi.addEventListener("mouseleave", (e)=>{
+            pi.classList.remove(projectItem_SHOWEDClassName)
+            pi.childNodes.forEach(element => {
+                element.style.top = "0%"
+                if (element.localName === "video"){
+                    element.pause();
+                }
+            });
+        })
+
+    }
+    const activateProjectItems = (projectItems)=>{
+        setTimeout(() =>{
+            if (i < projectItems.length){
+                projectItems[i].classList.add(projectItem_ACTIVATEDClassName)
+                setPI(projectItems[i])
+                i++
+                activateProjectItems(projectItems)
+            }
+        },timer)
+    }
+
+
+    const observingHandling =  ([entry])=>{
+        if (entry.isIntersecting) {
+            // crear state global con object para saber que pages ya han sido activadas
+            const projectItems = document.getElementsByClassName(projectItemClassName)
+            activateTitle(projectsTitleClassName)
+            activateProjectItems(projectItems)
+        }
+    }
+    useEffect(()=>{
+        if (projectsContainerRef.current) {
+            const observer = new IntersectionObserver(observingHandling,{root: null,rootMargin: '0px',threshold: 0.1});
+            observer.observe(projectsContainerRef.current);
+        }
+    }, [])
+
     return (
-        <section className="projects-container">
+        <section ref={projectsContainerRef} className="projects-container">
             <h2 className="projects-container__title title">My <span className="projects-container__title__made title__selected-text"> Projects </span></h2>
             <div className="projects-container__projects_list">
                 <ProjectItem 

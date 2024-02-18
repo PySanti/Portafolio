@@ -4,7 +4,7 @@ export function activateTitle(pageTitleClassName){
         pageTitle.style.left = "0vw"
         pageTitle.style.top = "0vh"
         pageTitle.style.opacity = "1"
-        if (pageTitle.hasChildNodes()){
+        if (pageTitle.hasChildNodes() && pageTitle.children[0]){
             setTimeout(()=>{
                 pageTitle.children[0].style.margin = ".5vw"
                 pageTitle.children[0].style.color = "var(--base-color)"

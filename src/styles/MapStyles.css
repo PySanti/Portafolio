@@ -28,10 +28,11 @@
     box-shadow var(--animation-timing)
 }
 
-.map-item:hover,
-.map-item__SELECTED
-{
-    box-shadow: 0 0 0 2px var(--base-color);
+.map-item__SELECTED{
+    box-shadow: 0 0 0 2px var(--base-color) !important;
+}
+.map-item:hover{
+    box-shadow: 0 0 0 2px #414141;
 }
 
 
