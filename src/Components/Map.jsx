@@ -2,6 +2,7 @@ import React from "react"
 import {useEffect, useRef} from "react"
 import "../styles/MapStyles.css"
 import { mainContainerClassName} from "../utils/constants";
+import {MapItem} from "./MapItem"
 
 
 export function Map(){
@@ -9,6 +10,7 @@ export function Map(){
     const mapContainerACTIVATEDClassName             = "map-container__ACTIVATED"
     const mapItemClassName                           = "map-item"
     const mapItemSelectedClassName                   = "map-item__SELECTED"
+    const pagesNames = ["Home", "About", "Skills", "Projects", "Contact"]
 
 
     let mapContainerRef = useRef()
@@ -17,12 +19,12 @@ export function Map(){
             mapContainerRef.current.classList.add(mapContainerACTIVATEDClassName)
             setTimeout(()=>{
                 const MAP_ITEM_LIST = mapContainerRef.current.children
-                for (let i = 0; i < MAP_ITEM_LIST.length; i++ ){
+                for (let i = 0; i < MAP_ITEM_LIST.length ; i++){
                     if (MAP_ITEM_LIST[i].classList.contains(mapItemSelectedClassName)){
                         return false;
                     }
                 }
-                MAP_ITEM_LIST[0].classList.add(mapItemSelectedClassName)
+                mapContainerRef.current.children[0].classList.add(mapItemSelectedClassName)
             },2000)
         }, 500);
         const MAP_ITEMS_ARRAY = document.getElementsByClassName(mapItemClassName);
@@ -43,21 +45,10 @@ export function Map(){
     }, [])
     return (
         <div ref={mapContainerRef}className="map-container">
-            <div className="map-item">      
-                Home
-            </div>
-            <div className="map-item">      
-                About
-            </div>
-            <div className="map-item">     
-                Skills
-            </div>
-            <div className="map-item">   
-                Projects
-            </div>
-            <div className="map-item">    
-                Contact
-            </div>
+            {pagesNames.map((name)=>{
+                // poner keys con uuid
+                return <MapItem name={name}/>
+            })}
         </div>
     )
 }

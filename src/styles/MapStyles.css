@@ -17,25 +17,6 @@
 }
 
 
-.map-item{
-    --animation-timing : .2s;
-    cursor: pointer;
-    font-size: 1vw;
-    margin-left: 1vw;
-    padding: .5vw;
-    border-radius: 10px;
-    transition:  
-    box-shadow var(--animation-timing)
-}
-
-.map-item__SELECTED{
-    box-shadow: 0 0 0 2px var(--base-color) !important;
-}
-.map-item:hover{
-    box-shadow: 0 0 0 2px #414141;
-}
-
-
 
 @media (max-width : 900px) {
     .map-item{
