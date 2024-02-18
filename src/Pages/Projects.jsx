@@ -5,19 +5,10 @@ import {ProjectItem} from "../Components/ProjectItem"
 import { activateTitle } from "../utils/activateTitle";
 
 export function Projects(props){
-
     const projectsTitleClassName                     = "projects-container__title"
-    const projectsContainerTITLE_ACTIVATEDClassName  = "projects-container__title__ACTIVATED"
-    const projectsContainerTITLE_UN_SHOWEDClassName  = "projects-container__title__UNSHOWED"
-    const projectsTitleMADEClassName                 = "projects-container__title__made"
-    const projectsTitleMADE__ACTIVATEDClassName      = "projects-container__title__made__ACTIVATED"
-
-
     const projectItemClassName                       = "project-item"
-    const projectItemContainerClassName              = "projects-container__projects_list"
     const projectItem_ACTIVATEDClassName             = "project-item__ACTIVATED"
     const projectItem_SHOWEDClassName                = "project-item__SHOWED"
-    const projectsContainerClassName                 = "projects-container"
 
     let projectsContainerRef = useRef()
     const timer = 100

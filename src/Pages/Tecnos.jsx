@@ -13,7 +13,6 @@ import { activateTitle } from "../utils/activateTitle"
 export function Tecnos(props){
 
     const tecnosTitleClassName                       = "tecnos-container__title"
-    const tenocsTitleDOMClassName                    = "tecnos-container__title__dom"
     const tecnosListClassName                        = "tecnos-container__list"
     const activatedTecnosClassName                   = "tecno_activated"
 

@@ -8,11 +8,7 @@ import { activateTitle } from "../utils/activateTitle";
 
 export function About(props){
 
-    const aboutContainerClassName                    = "about-container"
     const aboutContainerTITLEClassName               = "about-container__title"
-    const aboutContainerTITLE_COMPClassName          = "about-container__title__comp"
-    const aboutContainerPARAPHClassName              = "about-container__paraph"
-    const aboutContainerPARAPH_KEYWORDSClassName     = "about-container__paraph__u"
 
 
     let aboutContainerRef = useRef()

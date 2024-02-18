@@ -3,19 +3,11 @@ import {useEffect, useRef} from "react"
 import "../styles/ContactStyles.css"
 import { CopyBtn } from "../Components/CopyBtn";
 import {EMAIL} from "../utils/constants"
-import { 
-    contactContentPARAPH_P1ClassName, 
-    contactContentPARAPH_P2ClassName, 
-    contactContentTITLEClassName} 
-    from "../index";
 import { activateTitle } from "../utils/activateTitle";
 
 
 export function Contact(){
-    const contactContentClassName                    = "contact-content"
     const contactContentTITLEClassName               = "contact-content__title"
-    const contactContentTITLE_MEClassName            = "contact-content__title__me"
-    const contactContentPARAPHClassName              = "contact-content__paraph"
     const contactContentPARAPH_P1ClassName           = "contact-content__paraph__p1"
     const contactContentPARAPH_P2ClassName           = "contact-content__paraph__p2"
 

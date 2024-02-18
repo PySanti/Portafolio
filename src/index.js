@@ -1,5 +1,4 @@
 import React from "react"
-import {useEffect} from "react"
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Title }                      from './Pages/Title';
@@ -7,7 +6,6 @@ import { About }                      from './Pages/About';
 import {Contact}                      from "./Pages/Contact"
 import { Projects }                   from './Pages/Projects';
 import { Tecnos }                     from './Pages/Tecnos';
-import { activateTitle }              from './utils/activateTitle';
 import { Map }                        from './Components/Map';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

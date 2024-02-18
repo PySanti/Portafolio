@@ -6,7 +6,6 @@ import { mainContainerClassName} from "../utils/constants";
 
 export function Map(){
 
-    const mapContainerClassName                      = "map-container"
     const mapContainerACTIVATEDClassName             = "map-container__ACTIVATED"
     const mapItemClassName                           = "map-item"
     const mapItemSelectedClassName                   = "map-item__SELECTED"

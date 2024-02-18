@@ -5,9 +5,7 @@ import { EMAIL} from "../utils/constants";
 
 export function CopyBtn(){
 
-    const copyBtnClassName                           = "copy-btn"
     const copyBtnClassNameACTIVATED                  = "copy-btn__ACTIVATED"
-    const copyBtnSuccessMsg                          = "success-msg"
     const copyBtnSuccessMsgACTIVATED                 = "success-msg__ACTIVATED"
     let successMsgRef = useRef()
     let copyBtnRef =  useRef()
