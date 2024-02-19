@@ -1,7 +1,7 @@
 import {useEffect ,useRef} from 'react'
 import React from "react";
 import "../styles/ProjectStyles.css"
-import {ProjectItem} from "../Components/ProjectItem"
+import {ProjectItem} from "../components/ProjectItem"
 import { activateTitle } from "../utils/activateTitle";
 
 export function Projects(props){

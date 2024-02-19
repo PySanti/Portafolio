@@ -1,7 +1,7 @@
 import React from "react";
 import {useEffect, useRef} from "react"
 import "../styles/ContactStyles.css"
-import { CopyBtn } from "../Components/CopyBtn";
+import { CopyBtn } from "../components/CopyBtn";
 import {EMAIL} from "../utils/constants"
 import { activateTitle } from "../utils/activateTitle";
 
