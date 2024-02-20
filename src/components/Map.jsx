@@ -1,3 +1,4 @@
+import {v4} from "uuid"
 import React from "react"
 import {useEffect, useRef} from "react"
 import "../styles/MapStyles.css"
@@ -46,8 +47,10 @@ export function Map(){
     return (
         <div ref={mapContainerRef}className="map-container">
             {pagesNames.map((name)=>{
-                // poner keys con uuid
-                return <MapItem name={name}/>
+                return <MapItem 
+                    key={v4()}
+                    name={name}
+                    />
             })}
         </div>
     )

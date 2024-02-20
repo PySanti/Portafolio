@@ -5,7 +5,9 @@ import "../styles/TecnosStyles.css"
 import { activateTitle } from "../utils/activateTitle"
 import {updateRenderingState} from "../utils/updateRenderingState"
 import {pageRendered} from "../utils/pageRendered"
-import {TecnoItem} from "./TecnoItem"
+import {TecnoItem} from "../components/TecnoItem"
+import {TECNOS_LIST} from "../utils/constants"
+import {v4} from "uuid"
 
 
 
@@ -39,22 +41,7 @@ export function Tecnos(props){
             activateTitle(tecnosTitleClassName)
         }
     }
-    let TECNOS_LIST = [
-        'Python',
-        'Django',
-        'Django Rest Framework',
-        'Database Design',
-        'MySQL',
-        'PostgreSQL',
-        'JavaScript',
-        'CSS',
-        'Responsive Web Desing',
-        'HTML',
-        'React',
-        'PyGame', 
-        'C',
-        'Git',
-    ]
+
     useEffect(()=>{
         if (tecnosContainerRef.current) {
             const observer = new IntersectionObserver(observingHandling,{root: null,rootMargin: '0px',threshold: 0.1});
@@ -67,7 +54,10 @@ export function Tecnos(props){
             <ul className="tecnos-container__list">
                 {
                     TECNOS_LIST.map((tecno) =>{
-                        return <TecnoItem tecnoName={tecno}/>
+                        return <TecnoItem 
+                            key={v4()}
+                            tecnoName={tecno}
+                            />
                     })
                 }
             </ul>

@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/ProjectItemStyles.css"
 
-export function ProjectItem({name, videoFileName, repoLink, id}){
+export function ProjectItem({name, videoFileName, repoLink}){
     return (
-        <a target="__blank" href={repoLink} className="project-item" id={id}>
+        <div className="project-item">
             <h3 className="project-item__name">{name}</h3>
             <video alt="loading ..."className="project-item__video" muted loop  src={videoFileName}  />
-        </a>
+        </div>
     )
 }
