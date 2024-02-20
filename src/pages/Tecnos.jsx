@@ -5,6 +5,7 @@ import "../styles/TecnosStyles.css"
 import { activateTitle } from "../utils/activateTitle"
 import {updateRenderingState} from "../utils/updateRenderingState"
 import {pageRendered} from "../utils/pageRendered"
+import {TecnoItem} from "./TecnoItem"
 
 
 
@@ -21,22 +22,20 @@ export function Tecnos(props){
     const activatedTecnosClassName                   = "tecno_activated"
 
     let tecnosContainerRef = useRef()
-    const activateTecnosSkills = (tecnos,current_tecno)=>{
-        setTimeout(()=>{
-            tecnos[current_tecno].classList.add(activatedTecnosClassName)
+    const activateTecnosSkills = (tecnos)=>{
+        for (let i = 0; i < tecnos.length; i++){
             setTimeout(()=>{
-                tecnos[current_tecno].children[0].classList.add('tecno_check__activated')
-            }, current_tecno*100)
-        }, current_tecno*200)
-        if (current_tecno+1 < tecnos.length){
-            activateTecnosSkills(tecnos, current_tecno+1)
+                tecnos[i].classList.add(activatedTecnosClassName)
+                setTimeout(()=>{
+                    tecnos[i].children[0].classList.add('tecno_check__activated')
+                }, i*150)
+            }, i*200)
         }
     }
     const observingHandling = ([entry])=>{
         if (entry.isIntersecting && !pageRendered("tecnos")) {
             updateRenderingState("tecnos")
-            let tecnos = document.getElementsByClassName(tecnosListClassName)[0].children
-            activateTecnosSkills(tecnos, 0)
+            activateTecnosSkills(document.getElementsByClassName(tecnosListClassName)[0].children)
             activateTitle(tecnosTitleClassName)
         }
     }
@@ -68,12 +67,7 @@ export function Tecnos(props){
             <ul className="tecnos-container__list">
                 {
                     TECNOS_LIST.map((tecno) =>{
-                        return (
-                            <li key={tecno} className="tecnos-container__list__item">
-                                <span className="tecno_check">✓</span>
-                                <span className="tecno_name">{tecno}</span>
-                            </li>
-                        )
+                        return <TecnoItem tecnoName={tecno}/>
                     })
                 }
             </ul>
