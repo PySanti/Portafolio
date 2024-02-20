@@ -7,18 +7,15 @@ import { activateTitle } from "../utils/activateTitle";
 
 
 export function About(props){
-
     const aboutContainerTITLEClassName               = "about-container__title"
-
-
     let aboutContainerRef = useRef()
+
     const observingHandling = ([entry])=>{
         if (entry.isIntersecting) {
             // crear state global con object para saber que pages ya han sido activadas
             activateTitle(aboutContainerTITLEClassName)
             setTimeout(()=>{
-                aboutContainerRef.current.style.left = "0vw";
-                aboutContainerRef.current.style.opacity = 1;
+                aboutContainerRef.current.classList.add("activated-about-container")
             }
             ,500)
         }

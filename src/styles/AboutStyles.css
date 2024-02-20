@@ -27,6 +27,11 @@
     transition: text-shadow .5s;
 }
 
+.activated-about-container{
+    left : 0;
+    opacity: 1;
+}
+
 
 .about-container__paraph__u:hover{
     text-shadow: var(--base-shadow);
