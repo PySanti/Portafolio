@@ -2,6 +2,10 @@ import React from "react";
 import {useEffect, useRef} from "react"
 import "../styles/AboutStyles.css"
 import { activateTitle } from "../utils/activateTitle";
+import {updateRenderingState} from "../utils/updateRenderingState"
+import {pageRendered} from "../utils/pageRendered"
+
+
 
 
 
@@ -11,8 +15,8 @@ export function About(props){
     let aboutContainerRef = useRef()
 
     const observingHandling = ([entry])=>{
-        if (entry.isIntersecting) {
-            // crear state global con object para saber que pages ya han sido activadas
+        if (entry.isIntersecting && !pageRendered("about")) {
+            updateRenderingState("about")
             activateTitle(aboutContainerTITLEClassName)
             setTimeout(()=>{
                 aboutContainerRef.current.classList.add("activated-about-container")
