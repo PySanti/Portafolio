@@ -3,6 +3,10 @@ import React from "react";
 import "../styles/ProjectStyles.css"
 import {ProjectItem} from "../components/ProjectItem"
 import { activateTitle } from "../utils/activateTitle";
+import {updateRenderingState} from "../utils/updateRenderingState"
+import {pageRendered} from "../utils/pageRendered"
+
+
 
 export function Projects(props){
     const projectsTitleClassName                     = "projects-container__title"
@@ -50,8 +54,8 @@ export function Projects(props){
 
 
     const observingHandling =  ([entry])=>{
-        if (entry.isIntersecting) {
-            // crear state global con object para saber que pages ya han sido activadas
+        if (entry.isIntersecting && !pageRendered("projects")) {
+            updateRenderingState("projects")
             const projectItems = document.getElementsByClassName(projectItemClassName)
             activateTitle(projectsTitleClassName)
             activateProjectItems(projectItems)

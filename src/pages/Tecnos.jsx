@@ -3,6 +3,10 @@ import {useRef} from "react"
 import {useEffect} from "react"
 import "../styles/TecnosStyles.css"
 import { activateTitle } from "../utils/activateTitle"
+import {updateRenderingState} from "../utils/updateRenderingState"
+import {pageRendered} from "../utils/pageRendered"
+
+
 
 
 
@@ -29,8 +33,8 @@ export function Tecnos(props){
         }
     }
     const observingHandling = ([entry])=>{
-        if (entry.isIntersecting) {
-            // crear state global con object para saber que pages ya han sido activadas
+        if (entry.isIntersecting && !pageRendered("tecnos")) {
+            updateRenderingState("tecnos")
             let tecnos = document.getElementsByClassName(tecnosListClassName)[0].children
             activateTecnosSkills(tecnos, 0)
             activateTitle(tecnosTitleClassName)

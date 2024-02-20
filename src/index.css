@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
-  font-family: 'Roboto Mono', monospace;
+  font-family: monospace;
 }
 
 #root{
@@ -47,7 +47,6 @@
   height: auto;
   width: auto;
   position: relative;
-  font-family: 'Courier Prime', cursive; 
   font-size: 3vw;
   text-align: center;
   opacity: 0;

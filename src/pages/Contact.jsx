@@ -4,6 +4,12 @@ import "../styles/ContactStyles.css"
 import { CopyBtn } from "../components/CopyBtn";
 import {EMAIL} from "../utils/constants"
 import { activateTitle } from "../utils/activateTitle";
+import {updateRenderingState} from "../utils/updateRenderingState"
+import {pageRendered} from "../utils/pageRendered"
+
+
+
+
 
 
 export function Contact(){
@@ -15,8 +21,8 @@ export function Contact(){
     const [email__first, email__second] = EMAIL.split("@")
     let contactContainerRef = useRef()
     const observingHandling = ([entry])=>{
-        if (entry.isIntersecting) {
-            // crear state global con object para saber que pages ya han sido activadas
+        if (entry.isIntersecting && !pageRendered("contact")) {
+            updateRenderingState("contact")
             const paraphP1 = document.getElementsByClassName(contactContentPARAPH_P1ClassName)[0] 
             const paraphP2 = document.getElementsByClassName(contactContentPARAPH_P2ClassName)[0]
             const paraphList = [paraphP1, paraphP2]
