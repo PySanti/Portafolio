@@ -27,7 +27,20 @@
   height: 100vh;
 }
 
+#activated-title{
+  left: 0     ;
+  top : 0     ;
+  opacity: 1  ;
+}
 
+#activated-subtitle{
+  font-size: inherit;
+  margin-left : 20px               ;
+  color : var(--base-color)        ;
+  text-shadow : var(--base-shadow) ;
+  opacity : 1                      ;
+  left : 0vw                       ;
+}
 
 .title{
   letter-spacing: -2px;

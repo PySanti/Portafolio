@@ -2,6 +2,8 @@ import React from "react";
 import {useEffect} from "react"
 import "../styles/TitleStyles.css"
 import {activateTitle} from "../utils/activateTitle"
+import "zustand"
+import "uuid"
 
 export function Title(){
 
