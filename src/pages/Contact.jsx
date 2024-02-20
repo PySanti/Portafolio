@@ -16,22 +16,25 @@ export function Contact(){
     const contactContentTITLEClassName               = "contact-content__title"
     const contactContentPARAPH_P1ClassName           = "contact-content__paraph__p1"
     const contactContentPARAPH_P2ClassName           = "contact-content__paraph__p2"
-
-
     const [email__first, email__second] = EMAIL.split("@")
     let contactContainerRef = useRef()
+    const activateParaph = ()=>{
+        const paraphList = [
+            document.getElementsByClassName(contactContentPARAPH_P1ClassName)[0],
+            document.getElementsByClassName(contactContentPARAPH_P2ClassName)[0],
+        ]
+        setTimeout(() =>{
+            paraphList.forEach((element) =>{
+                element.classList.add("paraph_activated")
+            })
+        }, 500)
+    }
+
+
     const observingHandling = ([entry])=>{
         if (entry.isIntersecting && !pageRendered("contact")) {
             updateRenderingState("contact")
-            const paraphP1 = document.getElementsByClassName(contactContentPARAPH_P1ClassName)[0] 
-            const paraphP2 = document.getElementsByClassName(contactContentPARAPH_P2ClassName)[0]
-            const paraphList = [paraphP1, paraphP2]
-            setTimeout(() =>{
-                paraphList.forEach((element) =>{
-                    element.style.top = "0vw"
-                    element.style.opacity = "1"
-                })
-            }, 500)
+            activateParaph()
             activateTitle(contactContentTITLEClassName)
         }
     }

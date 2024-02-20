@@ -11,15 +11,19 @@
 .paraph-part{
     position: relative;
     opacity: 0;
-    transition: 
-    opacity var(--secondary-animation-timer), 
-    top var(--secondary-animation-timer);
+    transition-property: opacity top;
+    transition-duration: var(--secondary-animation-timer);
+    opacity : 0;
 }
 .contact-content__paraph__p1{
     top: -2vh;
 }
 .contact-content__paraph__p2{
     top: 4vh;
+}
+.paraph_activated{
+    top : 0vw;
+    opacity: 1;
 }
 .contact-content *{
     width: auto;
