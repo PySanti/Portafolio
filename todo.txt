@@ -1,4 +1,4 @@
-Terminar modal de los project items
+Terminar modal de los project items : terminar header y closebutton, hacer todos los wil
 Agregar/mejorar responsive a toda la app
 Agregar animacion de lottie para carga de los videos en los modales de los projectItems
 Usar cloudinary para optimizar videos

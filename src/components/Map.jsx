@@ -16,15 +16,19 @@ export function Map(){
         }, 500);
     }, [])
     return (
-        <div ref={mapContainerRef} className="map-container">
-            {pagesNames.map((name)=>{
-                currentPageNumber++
-                return <MapItem 
-                    key={v4()}
-                    name={name}
-                    pageId ={currentPageNumber}
-                    />
-            })}
+        <div className="map-bigger-container">
+
+            <div ref={mapContainerRef} className="map-container">
+                {pagesNames.map((name)=>{
+                    currentPageNumber++
+                    return <MapItem 
+                        key={v4()}
+                        name={name}
+                        pageId ={currentPageNumber}
+                        />
+                })}
+            </div>
+
         </div>
     )
 }
