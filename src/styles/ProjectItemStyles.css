@@ -10,11 +10,6 @@
     border-radius: 20px;
     opacity: 0;
     cursor: pointer;
-    overflow: hidden;
-    transform: scale(1,1);
-    transition: 
-    transform           var(--secondary-animation-timer),
-    opacity             var(--base-animation-timer)
 }
 
 
@@ -31,24 +26,10 @@
     transition: top var(--secondary-animation-timer);
 }
 
-
-.project-item__video{
-    top : 0%;
-    align-items: center;
-    position: relative;
-    width: inherit;
-    height: inherit;
-    transition: top var(--secondary-animation-timer);
-    object-fit: cover;
-}
-
 .project-item__ACTIVATED{
     opacity: 1;
 }
 
-.project-item__SHOWED{
-    transform: scale(2,2);
-}
 
 @media (max-width : 900px){
     .project-item__name{

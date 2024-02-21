@@ -18,12 +18,11 @@ import {v4} from "uuid"
 
 
 export function Tecnos(props){
-
     const tecnosTitleClassName                       = "tecnos-container__title"
     const tecnosListClassName                        = "tecnos-container__list"
     const activatedTecnosClassName                   = "tecno_activated"
+    let   tecnosContainerRef                         = useRef()
 
-    let tecnosContainerRef = useRef()
     const activateTecnosSkills = (tecnos)=>{
         for (let i = 0; i < tecnos.length; i++){
             setTimeout(()=>{

@@ -27,20 +27,6 @@
     transform: scale(1.2,1.2);
 }
 
-.success-msg{
-    font-size: .8vw;
-    opacity: 0;
-    position: relative;
-    left: -10vw;
-    transition: left .6s, opacity .2s;
-    z-index: 9;
-}
-
-.success-msg__ACTIVATED{
-    opacity: 1;
-    left: 1vw;
-}
-
 
 @media (max-width : 900px){
     .copy-btn{
@@ -49,8 +35,6 @@
         margin-left: 40vw;
         padding: 4.5vw;
     }
-    .success-msg{
-        font-size: 2vw;
-    }
+
 }
 

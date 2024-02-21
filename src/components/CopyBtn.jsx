@@ -10,7 +10,6 @@ import {copyOnClipboard} from "../utils/copyOnClipboard"
 export function CopyBtn(){
     const copyBtnClassNameACTIVATED                  = "copy-btn__ACTIVATED"
     const copyBtnSuccessMsgACTIVATED                 = "success-msg__ACTIVATED"
-    let   successMsgRef                              = useRef()
     let   copyBtnRef                                 =  useRef()
 
     const observingHandling = ([entry])=>{
@@ -37,7 +36,6 @@ export function CopyBtn(){
             <span className="material-symbols-outlined copy-btn__img" onClick={handleClick}>
                 content_copy
             </span>
-            <span ref={successMsgRef} className="success-msg">copied!</span>
         </div>
     )
 }

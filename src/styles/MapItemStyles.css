@@ -6,8 +6,8 @@
     margin-left: 1vw;
     padding: .5vw;
     border-radius: 10px;
-    transition:  
-    box-shadow var(--animation-timing)
+    transition-property: box-shadow;
+    transition-duration: var(--animation-timing);
 }
 
 .map-item__SELECTED{
