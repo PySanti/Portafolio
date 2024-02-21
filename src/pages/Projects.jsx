@@ -51,6 +51,7 @@ export function Projects(props){
                                 name={project["name"]}
                                 videoFileName={project["videoFileName"]}
                                 repoLink={project["repoLink"]}
+                                wil={project["wil"]}
                             />
                             )
                     })

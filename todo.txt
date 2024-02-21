@@ -1,1 +1,4 @@
-
+Terminar modal de los project items
+Agregar/mejorar responsive a toda la app
+Agregar animacion de lottie para carga de los videos en los modales de los projectItems
+Usar cloudinary para optimizar videos

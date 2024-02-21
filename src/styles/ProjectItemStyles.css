@@ -10,6 +10,7 @@
     border-radius: 20px;
     opacity: 0;
     cursor: pointer;
+    transition : opacity var(--secondary-animation-timer);
 }
 
 
@@ -23,12 +24,80 @@
     top : 0%;
     width: inherit;
     height: inherit;
-    transition: top var(--secondary-animation-timer);
 }
 
 .project-item__ACTIVATED{
     opacity: 1;
 }
+
+.modal-container{
+    --base-padding : 10px;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    opacity : 0;
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .2s;
+}
+
+.displayed{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.project-display{
+    width: 80%;
+    height: 80%;
+    background-color : #000;
+    border-radius: 20px;
+}
+.project-display-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    justify-content: center;
+}
+.content-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wil-container{
+    max-width: 30%;
+    padding: 0 var(--base-padding) 0 var(--base-padding);
+    overflow-wrap: break-word;
+}
+.video-container{
+    padding-right: var(--base-padding);
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    max-width: 50%;
+    height: 80%;
+}
+.project-item__video{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+.close-button{
+    background-color : #f0f;
+    padding: 20px;
+    cursor : pointer;
+}
+
 
 
 @media (max-width : 900px){

@@ -20,6 +20,7 @@ export const PROJECTS_LIST = [
         name                :"Geome Man" ,
         repoLink            :"https://github.com/PySanti/kill-the-madafaka.git",
         videoFileName       :"./projectVideos/ktm.mp4",
+        wil                 : "lloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremorem"
     },
     {
         name                :"Bouncing Ball" ,
