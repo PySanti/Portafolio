@@ -1,5 +1,7 @@
-
 Usar cloudinary para optimizar videos
+
+Hacer y subir video de friendnet a cloudinary
+
 Agregar a los proyect items un contendor del link, es decir, que los proyectos que esten montados, tengan su repolink y su mountLink, y los que no solo repoLink
 
 revisar todos los wil (context, descripcion, aprendizaje)
@@ -8,3 +10,4 @@ Agregar/mejorar responsive a toda la app
 
 Agregar animacion de lottie para carga de los videos en los modales de los projectItems
 
+Recordar implementacion de sonner

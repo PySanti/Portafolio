@@ -94,6 +94,7 @@
     max-height: 100%;
     max-width: 100%;
     border-radius: 20px;
+    box-shadow: var(--base-shadow);
 }
 
 

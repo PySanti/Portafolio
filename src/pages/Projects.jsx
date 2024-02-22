@@ -49,7 +49,7 @@ export function Projects(props){
                             <ProjectItem
                                 key={v4()}
                                 name={project["name"]}
-                                videoFileName={project["videoFileName"]}
+                                videoId={project["videoId"]}
                                 repoLink={project["repoLink"]}
                                 wil={project["wil"]}
                             />

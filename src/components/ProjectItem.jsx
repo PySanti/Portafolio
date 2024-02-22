@@ -1,8 +1,16 @@
 import React from "react";
 import {useState} from "react"
 import "../styles/ProjectItemStyles.css"
+import {Cloudinary} from "@cloudinary/url-gen"
+import {AdvancedVideo} from "@cloudinary/react"
 
-export function ProjectItem({name, videoFileName, repoLink, wil}){
+const cloud = new Cloudinary({
+    cloud : {
+        cloudName : 'dwcabo8hs'
+    }
+})
+
+export function ProjectItem({name, videoId, repoLink, wil}){
     let [projectActivated, setProjectActivated] = useState(false)
     return (
         <>
@@ -20,7 +28,11 @@ export function ProjectItem({name, videoFileName, repoLink, wil}){
                     <div className="content-container">
                         <p className="wil-container">{wil} Visit the repo <a href={repoLink} target="__blank">here</a>!</p>
                         <div className="video-container">
-                            <video alt="loading ..."className="project-item__video" controls src={videoFileName}  />
+                            <AdvancedVideo
+                                className="project-item__video"
+                                cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
+                                controls
+                            />
                         </div>
                     </div>
                 </div>
