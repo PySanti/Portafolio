@@ -16,7 +16,7 @@ export function ProjectItem({name, videoFileName, repoLink, wil}){
                         <div className="close-button" onClick={()=>setProjectActivated(false)}>X</div>
                     </header>
                     <div className="content-container">
-                        <p className="wil-container">{wil}. Visit the repo <a href={repoLink} target="__blank">here</a>!</p>
+                        <p className="wil-container">{wil} Visit the repo <a href={repoLink} target="__blank">here</a>!</p>
                         <div className="video-container">
                             <video alt="loading ..."className="project-item__video" controls src={videoFileName}  />
                         </div>
