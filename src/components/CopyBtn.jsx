@@ -10,7 +10,8 @@ import {copyOnClipboard} from "../utils/copyOnClipboard"
 export function CopyBtn(){
     const copyBtnClassNameACTIVATED                  = "copy-btn__ACTIVATED"
     const copyBtnSuccessMsgACTIVATED                 = "success-msg__ACTIVATED"
-    let   copyBtnRef                                 =  useRef()
+    let   copyBtnRef                                 =  useRef(null)
+    let   successMsgRef                              =  useRef(null)
 
     const observingHandling = ([entry])=>{
         if (entry.isIntersecting && !pageRendered("copyBtn")) {
@@ -23,7 +24,7 @@ export function CopyBtn(){
 
     const handleClick = ()=>{
         copyOnClipboard(EMAIL)
-        //sonner
+        successMsgRef.current.classList.add(copyBtnSuccessMsgACTIVATED)
     }
     useEffect(()=>{
         if (copyBtnRef.current) {
@@ -35,6 +36,9 @@ export function CopyBtn(){
         <div ref={copyBtnRef} className="copy-btn">
             <span className="material-symbols-outlined copy-btn__img" onClick={handleClick}>
                 content_copy
+            </span>
+            <span className="success-msg" ref={successMsgRef}>
+                copied !
             </span>
         </div>
     )

@@ -52,6 +52,7 @@ export function Projects(props){
                                 videoId={project["videoId"]}
                                 repoLink={project["repoLink"]}
                                 wil={project["wil"]}
+                                mountedLink={project["mountedLink"]}
                             />
                             )
                     })

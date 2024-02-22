@@ -10,7 +10,7 @@ const cloud = new Cloudinary({
     }
 })
 
-export function ProjectItem({name, videoId, repoLink, wil}){
+export function ProjectItem({name, videoId, repoLink, wil, mountedLink}){
     let [projectActivated, setProjectActivated] = useState(false)
     return (
         <>
@@ -26,7 +26,18 @@ export function ProjectItem({name, videoId, repoLink, wil}){
                         </span>
                     </header>
                     <div className="content-container">
-                        <p className="wil-container">{wil} Visit the repo <a href={repoLink} target="__blank">here</a>!</p>
+                        <div className="wil-container">
+                            <p className="wil-description">{wil} </p>
+                            <p className="wil-repo-link">
+                                Visit the repository <a href={repoLink} target="__blank">here</a>!
+                            </p>
+                            {
+                                mountedLink &&
+                                <p className="wil-mounted-link">
+                                    Visit the page <a href={mountedLink} target="__blank">here</a>!
+                                </p>
+                            }
+                        </div>
                         <div className="video-container">
                             <AdvancedVideo
                                 className="project-item__video"

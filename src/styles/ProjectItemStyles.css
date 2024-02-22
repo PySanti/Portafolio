@@ -97,6 +97,9 @@
     box-shadow: var(--base-shadow);
 }
 
+.wil-repo-link{
+    margin: 20px 0 20px 0;
+}
 
 .close-button{
     cursor : pointer;

@@ -27,14 +27,34 @@
     transform: scale(1.2,1.2);
 }
 
+.success-msg{
+    position: relative;
+    width: auto;
+    left: -200%;
+    transition: left .5s;
+}
+
+.success-msg__ACTIVATED{
+    position: relative;
+    left: 0;
+}
+
 
 @media (max-width : 900px){
     .copy-btn{
-        width: 7vw;
         height: 2vh;
         margin-left: 40vw;
         padding: 4.5vw;
+        font-size: 10px;
     }
 
 }
+
+@media (max-width : 400px){
+    .copy-btn{
+        font-size: 5px !important;
+    }
+
+}
+
 
