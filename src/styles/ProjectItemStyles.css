@@ -53,14 +53,18 @@
     opacity: 1;
 }
 .project-display{
+
+    box-shadow: var(--base-shadow);
     width: 80%;
     height: 80%;
     background-color : #000;
     border-radius: 20px;
 }
 .project-display-header{
+    margin-top: 3em;
     width: 100%;
     display: flex;
+    font-size: 20px;
     flex-direction: row;
     align-items : center;
     justify-content: center;
@@ -73,7 +77,8 @@
     align-items: center;
 }
 .wil-container{
-    max-width: 30%;
+    max-width: 40%;
+    font-size: 15px;
     padding: 0 var(--base-padding) 0 var(--base-padding);
     overflow-wrap: break-word;
 }
@@ -82,7 +87,7 @@
     display: flex;
     justify-content: center;
     align-items : center;
-    max-width: 50%;
+    max-width: 30%;
     height: 80%;
 }
 .project-item__video{
@@ -93,9 +98,9 @@
 
 
 .close-button{
-    background-color : #f0f;
-    padding: 20px;
     cursor : pointer;
+    position: relative;
+    left: 30%;
 }
 
 

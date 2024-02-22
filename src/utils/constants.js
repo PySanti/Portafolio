@@ -18,7 +18,7 @@ export const TECNOS_LIST = [
 export const PROJECTS_LIST = [
     {
         name                :"Geome Man" ,
-        repoLink            :"https://github.com/PySanti/kill-the-madafaka.git",
+        repoLink            :"https://github.com/PySanti/geome-man.git",
         videoFileName       :"./projectVideos/ktm.mp4",
         wil                 : "This was the first big project I did. The first one in which I invested a lot of time and went into a lot of detail. A project that took more than 8 months. I learned the influence of mathematics on the world of videogames and how complicated it is to develop this kind of projects. In spite of that, this project awakened in me a great passion for game development and graphics in general."
     },
@@ -62,7 +62,7 @@ export const PROJECTS_LIST = [
         name                :"Mega Killer" ,
         repoLink            :"https://github.com/PySanti/megakiller.git",
         videoFileName       :"./projectVideos/mk.mp4",
-        wil                 :"Before KILL-THE-MADAFAKA I developed this little project with a quite similar format, but using MegaMan sprites and sound effects from the famous animated series. As you can see if you run the program, the physics are not the best."
+        wil                 :"Before GEOME-MAN I developed this little project with a quite similar format, but using MegaMan sprites and sound effects from the famous animated series. As you can see if you run the program, the physics are not the best."
     },
     {
         name                :"Hypno Rect" ,
