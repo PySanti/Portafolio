@@ -26,13 +26,13 @@ export const PROJECTS_LIST = [
         name                :"Bouncing Ball" ,
         repoLink            :"https://github.com/PySanti/bouncing-ball.git",
         videoId             :"bouncingBall",
-        wil                 :"One of the first simple projects i developed to put my first PyGame knowledge into practice. My wish from the beginning was to mirror the behaviour of real world physics within the program. It is a program of an infinitely bouncing ball. Developed with Python and PyGame."
+        wil                 :"One of the first simple projects i developed to put my first PyGame knowledge into practice. My wish from the beginning was to mirror the behavior of real world physics within the program. It is a program of an infinitely bouncing ball. Developed with Python and PyGame."
     },
     {
         name                : "Calc It" ,
         repoLink            : "https://github.com/PySanti/calc-it.git",
         videoId             :"calcIt",
-        wil                 : "I developed this project shortly after i started learning React, it doesn't have the best implementation and use of React, and now i look at the code and realise how much i've learned since then. This is a calculator made with React, JavaScript, CSS and HTML."
+        wil                 : "I developed this project shortly after i started learning React, it doesn't have the best implementation and use of React, and now i look at the code and realize how much i've learned since then. This is a calculator made with React, JavaScript, CSS and HTML."
     },
     {
         name                :"Facebook clon" ,
@@ -62,7 +62,7 @@ export const PROJECTS_LIST = [
         name                :"Mega Killer" ,
         repoLink            :"https://github.com/PySanti/megakiller.git",
         videoId             :"megaKiller",
-        wil                 :"Before 'Geome man' I developed this little project with a quite similar format, but using MegaMan sprites and sound effects from the famous animated series. As you can see if you run the program, the physics are not the best. Made with PyGame and Python"
+        wil                 :"Before 'Geome man' I developed this little project with a quite similar format, but using MegaMan sprites and sound effects from the famous animated series. As you can see if you run the program, the physics are not the best. Made with PyGame and Python."
     },
     {
         name                :"Hypno Rect" ,

@@ -28,15 +28,17 @@ export function ProjectItem({name, videoId, repoLink, wil, mountedLink}){
                     <div className="content-container">
                         <div className="wil-container">
                             <p className="wil-description">{wil} </p>
-                            <p className="wil-repo-link">
-                                Visit the repository <a href={repoLink} target="__blank">here</a>!
-                            </p>
-                            {
-                                mountedLink &&
-                                <p className="wil-mounted-link">
-                                    Visit the page <a href={mountedLink} target="__blank">here</a>!
-                                </p>
-                            }
+                            <ul className="redirect-container">
+                                <li className="wil-repo-link">
+                                    Visit the repository <a href={repoLink} target="__blank">here</a>!
+                                </li>
+                                {
+                                    mountedLink &&
+                                    <li className="wil-mounted-link">
+                                        Visit the page <a href={mountedLink} target="__blank">here</a>!
+                                    </li>
+                                }
+                            </ul>
                         </div>
                         <div className="video-container">
                             <AdvancedVideo

@@ -1,9 +1,5 @@
 Hacer y subir video de friendnet a cloudinary
 
-Agregar a los proyect items un contendor del link, es decir, que los proyectos que esten montados, tengan su repolink y su mountLink, y los que no solo repoLink
-
-revisar todos los wil (descripcion, tecnologias, [aprendizaje]) de nuevo
-
 Agregar/mejorar responsive a toda la app
 
 Terminar con todos los cambios y subir el ultimo cambio a produccion
