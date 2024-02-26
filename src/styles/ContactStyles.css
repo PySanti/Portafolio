@@ -1,6 +1,6 @@
 
 .contact-content__paraph{
-    font-size: 1vw;
+    font-size: var(--tiny-font-size);
 }
 .contact-content__title{
     left : -5vw;
@@ -11,6 +11,7 @@
 .paraph-part{
     position: relative;
     opacity: 0;
+    font-size: var(--normal-font-size);
     transition-property: opacity top;
     transition-duration: var(--secondary-animation-timer);
     opacity : 0;
@@ -36,10 +37,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width : 900px){
-    .paraph-part{
-        font-size: 3vw;
-    }
 }

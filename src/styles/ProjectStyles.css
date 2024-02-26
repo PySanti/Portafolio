@@ -14,7 +14,7 @@
     max-height:100vh ;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 1vw;
+    gap: 2rem;
 }
 
 
@@ -26,16 +26,26 @@
 }
 
 
-@media (max-width : 900px){
+@media (max-width : 1300px){
     .projects-container{
         flex-direction: column;
         justify-content: center;
     }
     .projects-container__title{
-        margin-bottom: 2vh;
+        margin: 10vh;
     }
+    .projects-container__projects_list{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+}
+
+
+
+@media (max-width : 400px){
 
     .projects-container__projects_list{
-        gap: 2vw;
+        margin-top: 10vh;
+        gap: .5rem;
     }
 }

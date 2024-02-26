@@ -34,7 +34,7 @@ export function About(props){
     const age = Math.round((new Date() - new Date('10-16-2005')) / (1000 * 60 * 60 * 24 * 365.25))
     return (
     <section className="about-container">
-        <h2 className="about-container__title title">About <span className="about-container__title__comp title__selected-text"> Me </span></h2>
+        <h2 className="about-container__title title">About<span className="about-container__title__comp title__selected-text">Me</span></h2>
         <p className="about-container__paraph" ref={aboutContainerRef}>
             I am {age} years old and although I am a second semester 
             student of computer engineering at the 

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: var(--tiny-font-size);
 }
 .header-container__text{
     left : -100vw;

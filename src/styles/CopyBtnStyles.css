@@ -7,6 +7,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    font-size: var(--tiny-font-size) !important;
     align-items: center;
     position: relative;
     opacity: 0;
@@ -45,16 +46,6 @@
         height: 2vh;
         margin-left: 40vw;
         padding: 4.5vw;
-        font-size: 10px;
     }
 
 }
-
-@media (max-width : 400px){
-    .copy-btn{
-        font-size: 5px !important;
-    }
-
-}
-
-

@@ -2,8 +2,7 @@
     box-shadow: var(--base-shadow);
     user-select: none;
     text-decoration: none;
-    width: 10vw;
-    height: 10vh;
+    padding: 3rem 1rem;
     position: relative;
     color : #000;
     background-color: var(--back-color);
@@ -19,9 +18,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: .7vw;
-    position: relative;
-    top : 0%;
+    font-size: var(--tiny-font-size);
     width: inherit;
     height: inherit;
 }
@@ -64,7 +61,7 @@
     margin-top: 3em;
     width: 100%;
     display: flex;
-    font-size: 20px;
+    font-size: var(--normal-font-size);
     flex-direction: row;
     align-items : center;
     justify-content: center;
@@ -78,8 +75,7 @@
 }
 .wil-container{
     max-width: 40%;
-    font-size: 15px;
-    padding: 0 var(--base-padding) 0 var(--base-padding);
+    font-size: var(--tiny-font-size);
     overflow-wrap: break-word;
 }
 .video-container{
@@ -97,9 +93,6 @@
     box-shadow: var(--base-shadow);
 }
 
-.wil-repo-link{
-    margin: 20px 0 20px 0;
-}
 
 .close-button{
     cursor : pointer;
@@ -107,15 +100,23 @@
     left: 30%;
 }
 
+.redirect-container{
+    margin-top: 40px;
+}
 
 
-@media (max-width : 900px){
-    .project-item__name{
-        font-size: 2vw;
-    }
+
+@media (max-width : 1000px){
     .project-item{
-        height: 8vh;
-        width: 20vw;
         border-radius: 10px;
+        padding: 2rem .5rem;
+    }
+}
+
+
+@media (max-width : 500px){
+    .project-item{
+        border-radius: 10px;
+        padding: 1rem .2rem;
     }
 }
