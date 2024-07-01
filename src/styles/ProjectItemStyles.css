@@ -77,13 +77,17 @@
     max-width: 40%;
     font-size: var(--tiny-font-size);
     overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
 }
 .video-container{
     padding-right: var(--base-padding);
     display: flex;
     justify-content: center;
     align-items : center;
-    max-width: 30%;
+    width: 40%;
     height: 80%;
 }
 .project-item__video{
@@ -97,7 +101,7 @@
 .close-button{
     cursor : pointer;
     position: relative;
-    left: 30%;
+    left: 20%;
 }
 
 .redirect-container{
@@ -111,6 +115,25 @@
         border-radius: 10px;
         padding: 2rem .5rem;
     }
+}
+
+@media (max-width : 800px){
+    .project-display-header{
+        margin-bottom: 3em;
+    }
+    .content-container{
+        flex-direction: column;
+    }
+    .wil-container{
+        max-width: 80%;
+    }
+    .video-container{
+        padding-top: 1em;
+        align-items : center;
+        height: 80%;
+        width: 60%;
+    }
+
 }
 
 
