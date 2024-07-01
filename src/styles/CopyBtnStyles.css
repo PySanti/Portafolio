@@ -1,13 +1,13 @@
 .copy-btn__img{
     transition : transform .5s;
     z-index: 99;
+    font-size: var(--normal-font-size);
 }
 .copy-btn{
     padding: 1vw;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    font-size: var(--tiny-font-size) !important;
     align-items: center;
     position: relative;
     opacity: 0;
@@ -29,6 +29,7 @@
 }
 
 .success-msg{
+    font-size: var(--tiny-font-size);
     position: relative;
     width: auto;
     left: -200%;
@@ -37,7 +38,7 @@
 
 .success-msg__ACTIVATED{
     position: relative;
-    left: 0;
+    left: 10%;
 }
 
 
@@ -49,3 +50,14 @@
     }
 
 }
+
+@media (max-width : 700px){
+    .copy-btn__img{
+        font-size: var(--big-font-size);
+    }
+    .success-msg{
+        font-size: var(--normal-font-size);
+    }
+}
+
+
