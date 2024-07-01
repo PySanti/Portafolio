@@ -101,7 +101,7 @@
 .close-button{
     cursor : pointer;
     position: relative;
-    left: 20%;
+    left: 10%;
 }
 
 .redirect-container{
@@ -130,8 +130,6 @@
     .video-container{
         padding-top: 1em;
         align-items : center;
-        height: 80%;
-        width: 60%;
     }
 
 }
