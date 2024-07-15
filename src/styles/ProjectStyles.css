@@ -45,10 +45,10 @@
 }
 
 .normal-project-legend::before{
-    background-color : #666565;
+    background-color : var(--normal-project-color);
 }
 .medium-project-legend::before{
-    background-color : #a35f32;
+    background-color : var(--medium-project-color);
 }
 .top-project-legend::before{
     background-color : var(--base-color);

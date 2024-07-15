@@ -14,6 +14,8 @@
   --side-back-color : rgb(53, 53, 53);
   --back-color : #000000;
   --base-color : #ff7b00;
+  --medium-project-color : #ff7b0071;
+  --normal-project-color : #ff7b0025;
   --base-animation-timer : 3s;
   --secondary-animation-timer : 1s;
   --big-font-size : 50px;
