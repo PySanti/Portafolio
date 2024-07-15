@@ -3,19 +3,24 @@ import {useState} from "react"
 import "../styles/ProjectItemStyles.css"
 import {Cloudinary} from "@cloudinary/url-gen"
 import {AdvancedVideo} from "@cloudinary/react"
-
+import { FaStar } from "react-icons/fa";
 const cloud = new Cloudinary({
     cloud : {
         cloudName : 'dwcabo8hs'
     }
 })
 
-export function ProjectItem({name, videoId, repoLink, wil, mountedLink}){
+export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
     let [projectActivated, setProjectActivated] = useState(false)
     return (
         <>
-            <div className="project-item" onClick={()=>setProjectActivated(true)}>
+            <div className="project-item"  onClick={()=>setProjectActivated(true)}>
                 <h3 className="project-item__name">{name}</h3>
+                <h2 className="project-type">
+                      {Array.from({ length: type+1 }).map((_, index) => (
+                        <FaStar key={index} />
+                      ))}
+                </h2>
             </div>
             <div className={projectActivated? "modal-container displayed" : "modal-container"}>
                 <div className="project-display">

@@ -20,6 +20,9 @@ export function Projects(props){
         for (let i = 0; i < projectItems.length; i++){
             setTimeout(() =>{
                 projectItems[i].classList.add(projectItem_ACTIVATEDClassName)
+                setTimeout(()=>{
+                    projectItems[i].children[1].classList.add("project-type__ACTIVATED")
+                }, 200)
             },100*i)
         }
     }
@@ -41,16 +44,9 @@ export function Projects(props){
 
     return (
         <section ref={projectsContainerRef} className="projects-container">
-            <div className="projects-title-father-container">
-                <h2 className="projects-container__title title">
-                    My <span className="projects-container__title__made title__selected-text"> Projects </span>
-                </h2>
-                <div className="project-legend">
-                    <h3 className="normal-project-legend">Normal project</h3>
-                    <h3 className="medium-project-legend">Medium project</h3>
-                    <h3 className="top-project-legend">Top project</h3>
-                </div>
-            </div>
+            <h2 className="projects-container__title title">
+                My <span className="projects-container__title__made title__selected-text"> Projects </span>
+            </h2>
             <div className="projects-container__projects_list">
                 {
                     PROJECTS_LIST.map((project)=>{
@@ -62,6 +58,7 @@ export function Projects(props){
                                 repoLink={project["repoLink"]}
                                 wil={project["wil"]}
                                 mountedLink={project["mountedLink"]}
+                                type ={project["type"]}
                             />
                             )
                     })

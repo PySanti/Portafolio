@@ -1,8 +1,11 @@
 .project-item{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
     box-shadow: var(--base-shadow);
     user-select: none;
     text-decoration: none;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     position: relative;
     color : #000;
     background-color: var(--back-color);
@@ -10,6 +13,18 @@
     opacity: 0;
     cursor: pointer;
     transition : opacity var(--secondary-animation-timer);
+}
+.project-type{
+    font-size: 12px;
+    opacity: 0;
+    position: relative;
+    transition-property: top opacity;
+    transition-duration: 1.3s;
+    margin-top: 1em;
+}
+.project-type__ACTIVATED{
+    top: 0;
+    opacity: .5;
 }
 
 
