@@ -69,13 +69,18 @@
     opacity: 1;
 }
 .project-display{
-
+    overflow-y: scroll;
     box-shadow: var(--base-shadow);
     width: 80%;
     height: 80%;
     background-color : #000;
     border-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    scrollbar-width: thin;
 }
+
+
 .project-display-header{
     margin-top: 2em;
     width: 100%;
