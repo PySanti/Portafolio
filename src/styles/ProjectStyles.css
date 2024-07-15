@@ -9,7 +9,6 @@
     height: auto;
     width: auto;
 }
-
 .projects-container__projects_list{
     max-height:100vh ;
     display: grid;

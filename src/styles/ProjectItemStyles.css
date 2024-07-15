@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items : center;
-    box-shadow: var(--base-shadow);
     user-select: none;
     text-decoration: none;
     padding: 2rem 1rem;
@@ -14,6 +13,11 @@
     cursor: pointer;
     transition : opacity var(--secondary-animation-timer);
 }
+.project-title{
+    text-align: center;
+}
+
+
 .project-type{
     font-size: var(--tiny-font-size);
     opacity: 0;
