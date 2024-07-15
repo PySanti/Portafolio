@@ -38,7 +38,7 @@ export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
                             <AdvancedVideo
                                 className="project-item__video"
                                 cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
-                                controls
+                                autoPlay={projectActivated}
                             />
                             <ul className="redirect-container">
                                 <li className="wil-repo-link">
