@@ -70,6 +70,7 @@
 }
 .project-display{
     overflow-y: scroll;
+    overflow-x: hidden;
     box-shadow: var(--base-shadow);
     width: 80%;
     height: 80%;
@@ -82,7 +83,7 @@
 
 
 .project-display-header{
-    margin-top: 2em;
+    margin: 2em;
     width: 100%;
     display: flex;
     font-size: var(--normal-font-size);
@@ -92,10 +93,10 @@
 }
 .content-container{
     width: 100%;
-    height: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5em;
 }
 .wil-container{
     max-width: 40%;
