@@ -25,13 +25,49 @@
     align-items: center;
 }
 
+.project-legend{
+    margin: 2em;
+}
+.project-legend > *{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+}
+.project-legend >*::before{
+    --size : .7em;
+    content : "";
+    height: var(--size);
+    width: var(--size);
+    margin-right: .5em;
+    border-radius: 100%;
+    background-color: #0f0;
+}
+
+.normal-project-legend::before{
+    background-color : #666565;
+}
+.medium-project-legend::before{
+    background-color : #a35f32;
+}
+.top-project-legend::before{
+    background-color : var(--base-color);
+}
+
+.projects-title-father-container{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+}
+
 
 @media (max-width : 1300px){
     .projects-container{
         flex-direction: column;
         justify-content: center;
     }
-    .projects-container__title{
+    .projects-title-father-container{
         margin: 10vh;
     }
     .projects-container__projects_list{

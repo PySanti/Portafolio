@@ -41,7 +41,16 @@ export function Projects(props){
 
     return (
         <section ref={projectsContainerRef} className="projects-container">
-            <h2 className="projects-container__title title">My <span className="projects-container__title__made title__selected-text"> Projects </span></h2>
+            <div className="projects-title-father-container">
+                <h2 className="projects-container__title title">
+                    My <span className="projects-container__title__made title__selected-text"> Projects </span>
+                </h2>
+                <div className="project-legend">
+                    <h3 className="normal-project-legend">Normal project</h3>
+                    <h3 className="medium-project-legend">Medium project</h3>
+                    <h3 className="top-project-legend">Top project</h3>
+                </div>
+            </div>
             <div className="projects-container__projects_list">
                 {
                     PROJECTS_LIST.map((project)=>{
