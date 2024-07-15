@@ -17,6 +17,69 @@ export const TECNOS_LIST = [
 ]
 export const PROJECTS_LIST = [
     {
+        name                :"FriendNet" ,
+        repoLink            :"https://github.com/PySanti/friendnet.git",
+        videoId             :"friendNet",
+        wil                 :"The most important project I've done so far: FriendNet, a web messaging application. This project has been very important for my life and for my career as a programmer, I started to develop it shortly after acquiring a lot of knowledge in Django and Django Rest Framework for backend development.  Without a doubt it has been the most challenging project I have ever taken on. It has made me learn a huge amount of things, improving my knowledge in React, zustand, JWT, web security, serializers, middlewares, authentication, endpoints and api's operation, the Django ORM, websockets, among many other things. It's incredible how many stages this project has gone through. It's really emotional for me to think about how much I've made this application grow. Without a doubt the most valuable project in my portfolio. I made it using Django, Python, React, HTML, CSS and JavaScript",
+        mountedLink         :"https://friendnet.netlify.app",
+        type                : 4
+    },
+
+    {
+        name                :"Graphic Binary Trees" ,
+        repoLink            :"https://github.com/PySanti/Graphic-Binary-Trees.git",
+        videoId             :"graphicBinaryTree",
+        wil                 :"One of the projects that i am most proud to show, although few can understand the merit it has and even more the context in which i developed it. This was one of my first 'big projects' that i created shortly after learning how to handle data structures and dynamic memory in C, when i was 14 years old. A few months after learning my first programming language : Pascal. I made this project to be able to see graphically the ordering of a simple binary tree in the terminal. Following one of the traditions that i imposed on myself when i was starting to program, i didn't look for any kind of source or reference to build what i wanted to build, all the code of the project was written and devised by me, including what for me was the most complicated : the algorithm of ordering of the nodes to graph when inserting a new node, a recursive algorithm. ",
+        type                : 3
+    },
+    {
+        name                :"Kremess" ,
+        repoLink            :"https://github.com/PySanti/kremess.git",
+        videoId             :"kremess",
+        wil                 :"A project carried out for Industrias Alimenticias Mogasi, a manufacturer of all kinds of food for the home. The aim of this website was to show the main products of the brand in the most user-friendly way possible. It is a project that to this day has not been finalized and there are still some details to be finished. I used React, HTML, CSS and JavaScript for the development, it is a static and server-less website. ",
+        mountedLink         :"https://kremess.netlify.app",
+        type                : 2
+    },
+
+    {
+        name                : "Calc It" ,
+        repoLink            : "https://github.com/PySanti/calc-it.git",
+        videoId             :"calcIt",
+        wil                 : "I developed this project shortly after i started learning React, it doesn't have the best implementation and use of React, and now i look at the code and realize how much i've learned since then. This is a calculator made with React, JavaScript, CSS and HTML.",
+        type                : 1
+    },
+    {
+        name                :"Geome Man" ,
+        repoLink            :"https://github.com/PySanti/geome-man.git",
+        videoId             :"geomeMan",
+        wil                 : "This was the first big project i did. The first one in which i invested a lot of time and went into a lot of detail. A project that took more than 8 months. I learned the influence of mathematics on the world of videogames and how complicated it is to develop this kind of projects. In spite of that, this project awakened in me a great passion for game development and graphics in general. It is a small game in which you control a character in another dimension. Made with Python and PyGame.",
+        type                : 1
+    },
+    {
+        name                :"Mega Killer" ,
+        repoLink            :"https://github.com/PySanti/megakiller.git",
+        videoId             :"megaKiller",
+        wil                 :"Before 'Geome man' I developed this little project with a quite similar format, but using MegaMan sprites and sound effects from the famous animated series. As you can see if you run the program, the physics are not the best. Made with PyGame and Python.",
+        type                : 1
+    },
+    {
+        name                :"Sprite Tester" ,
+        repoLink            :"https://github.com/PySanti/SpriteTester.git",
+        videoId             :"spriteTester",
+        wil                 :"In my time of developing simple video games using PyGame, i developed my own sprites for the animations using Paint, the windows program. I felt the need to program something to quickly test my sprites. For that i made this project, an easy, fast, flexible (and free) way to test my sprites. Made using PyGame and Python.",
+        type                : 1
+    },
+    {
+        name                :"Weder" ,
+        repoLink            :"https://github.com/PySanti/wederapp.git",
+        videoId             :"Weder",
+        wil                 :"Another of the first projects i developed to test my first knowledge of HTML, CSS and JavaScript, but this time to test the 'event loop' and the 'asynchronous programming' of JavaScript. A simple application to get weather data using a free api.",
+        type                : 1
+    },
+
+
+
+    {
         name                :"Bouncing Ball" ,
         repoLink            :"https://github.com/PySanti/bouncing-ball.git",
         videoId             :"bouncingBall",
@@ -65,64 +128,5 @@ export const PROJECTS_LIST = [
         wil                 :"A simple PyGame project, i did it in a couple of hours, i developed it from a simple idea i came up with, bringing to life a pretty nice graphical effect. It's worth noting that, although it seems extremely simple, this project led me to develop a great taste for graphical effects.",
         type                : 0
     },
-    {
-        name                : "Calc It" ,
-        repoLink            : "https://github.com/PySanti/calc-it.git",
-        videoId             :"calcIt",
-        wil                 : "I developed this project shortly after i started learning React, it doesn't have the best implementation and use of React, and now i look at the code and realize how much i've learned since then. This is a calculator made with React, JavaScript, CSS and HTML.",
-        type                : 1
-    },
-    {
-        name                :"Geome Man" ,
-        repoLink            :"https://github.com/PySanti/geome-man.git",
-        videoId             :"geomeMan",
-        wil                 : "This was the first big project i did. The first one in which i invested a lot of time and went into a lot of detail. A project that took more than 8 months. I learned the influence of mathematics on the world of videogames and how complicated it is to develop this kind of projects. In spite of that, this project awakened in me a great passion for game development and graphics in general. It is a small game in which you control a character in another dimension. Made with Python and PyGame.",
-        type                : 1
-    },
-    {
-        name                :"Mega Killer" ,
-        repoLink            :"https://github.com/PySanti/megakiller.git",
-        videoId             :"megaKiller",
-        wil                 :"Before 'Geome man' I developed this little project with a quite similar format, but using MegaMan sprites and sound effects from the famous animated series. As you can see if you run the program, the physics are not the best. Made with PyGame and Python.",
-        type                : 1
-    },
-    {
-        name                :"Sprite Tester" ,
-        repoLink            :"https://github.com/PySanti/SpriteTester.git",
-        videoId             :"spriteTester",
-        wil                 :"In my time of developing simple video games using PyGame, i developed my own sprites for the animations using Paint, the windows program. I felt the need to program something to quickly test my sprites. For that i made this project, an easy, fast, flexible (and free) way to test my sprites. Made using PyGame and Python.",
-        type                : 1
-    },
-    {
-        name                :"Weder" ,
-        repoLink            :"https://github.com/PySanti/wederapp.git",
-        videoId             :"Weder",
-        wil                 :"Another of the first projects i developed to test my first knowledge of HTML, CSS and JavaScript, but this time to test the 'event loop' and the 'asynchronous programming' of JavaScript. A simple application to get weather data using a free api.",
-        type                : 1
-    },
-    {
-        name                :"Kremess" ,
-        repoLink            :"https://github.com/PySanti/kremess.git",
-        videoId             :"kremess",
-        wil                 :"A project carried out for Industrias Alimenticias Mogasi, a manufacturer of all kinds of food for the home. The aim of this website was to show the main products of the brand in the most user-friendly way possible. It is a project that to this day has not been finalized and there are still some details to be finished. I used React, HTML, CSS and JavaScript for the development, it is a static and server-less website. ",
-        mountedLink         :"https://kremess.netlify.app",
-        type                : 2
-    },
 
-
-    {
-        name                :"Graphic Binary Trees" ,
-        repoLink            :"https://github.com/PySanti/Graphic-Binary-Trees.git",
-        videoId             :"graphicBinaryTree",
-        wil                 :"One of the projects that i am most proud to show, although few can understand the merit it has and even more the context in which i developed it. This was one of my first 'big projects' that i created shortly after learning how to handle data structures and dynamic memory in C, when i was 14 years old. A few months after learning my first programming language : Pascal. I made this project to be able to see graphically the ordering of a simple binary tree in the terminal. Following one of the traditions that i imposed on myself when i was starting to program, i didn't look for any kind of source or reference to build what i wanted to build, all the code of the project was written and devised by me, including what for me was the most complicated : the algorithm of ordering of the nodes to graph when inserting a new node, a recursive algorithm. ",
-        type                : 3
-    },
-    {
-        name                :"FriendNet" ,
-        repoLink            :"https://github.com/PySanti/friendnet.git",
-        videoId             :"friendNet",
-        wil                 :"The most important project I've done so far: FriendNet, a web messaging application. This project has been very important for my life and for my career as a programmer, I started to develop it shortly after acquiring a lot of knowledge in Django and Django Rest Framework for backend development.  Without a doubt it has been the most challenging project I have ever taken on. It has made me learn a huge amount of things, improving my knowledge in React, zustand, JWT, web security, serializers, middlewares, authentication, endpoints and api's operation, the Django ORM, websockets, among many other things. It's incredible how many stages this project has gone through. It's really emotional for me to think about how much I've made this application grow. Without a doubt the most valuable project in my portfolio. I made it using Django, Python, React, HTML, CSS and JavaScript",
-        mountedLink         :"https://friendnet.netlify.app",
-        type                : 4
-    },
 ]
