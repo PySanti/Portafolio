@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width : 400px){
+@media (max-width : 200px){
     .about-container__title, .tecnos-container__title, .projects-container__title{
         display: none !important;
     }
