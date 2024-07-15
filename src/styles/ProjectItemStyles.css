@@ -73,7 +73,7 @@
     border-radius: 20px;
 }
 .project-display-header{
-    margin-top: 3em;
+    margin-top: 1em;
     width: 100%;
     display: flex;
     font-size: var(--normal-font-size);
@@ -100,6 +100,7 @@
 .video-container{
     padding-right: var(--base-padding);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items : center;
     width: 40%;

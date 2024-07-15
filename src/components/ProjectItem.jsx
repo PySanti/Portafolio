@@ -33,6 +33,13 @@ export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
                     <div className="content-container">
                         <div className="wil-container">
                             <p className="wil-description">{wil} </p>
+                        </div>
+                        <div className="video-container">
+                            <AdvancedVideo
+                                className="project-item__video"
+                                cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
+                                controls
+                            />
                             <ul className="redirect-container">
                                 <li className="wil-repo-link">
                                     Visit the repository <a href={repoLink} target="__blank">here</a>!
@@ -44,13 +51,6 @@ export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
                                     </li>
                                 }
                             </ul>
-                        </div>
-                        <div className="video-container">
-                            <AdvancedVideo
-                                className="project-item__video"
-                                cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
-                                controls
-                            />
                         </div>
                     </div>
                 </div>
