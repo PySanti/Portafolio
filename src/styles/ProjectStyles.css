@@ -10,6 +10,7 @@
     width: auto;
 }
 .projects-container__projects_list{
+    margin : 0em 2em;
     max-height:100vh ;
     display: grid;
     grid-template-columns: repeat(4,1fr);
