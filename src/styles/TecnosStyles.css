@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-left: 1em;
 }
 .tecnos-container *{
     display: flex;
