@@ -1,4 +1,4 @@
-export const EMAIL                                      = "santiagodeandrade4@gmail.com"
+export const EMAIL                                      = "santiagodeandrade111@gmail.com"
 export const TECNOS_LIST = [
     'Python',
     'Django',
