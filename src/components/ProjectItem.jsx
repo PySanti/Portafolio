@@ -4,6 +4,8 @@ import "../styles/ProjectItemStyles.css"
 import {Cloudinary} from "@cloudinary/url-gen"
 import {AdvancedVideo} from "@cloudinary/react"
 import { FaStar } from "react-icons/fa";
+import { useInView } from 'react-intersection-observer';  
+
 const cloud = new Cloudinary({
     cloud : {
         cloudName : 'dwcabo8hs'
@@ -12,6 +14,10 @@ const cloud = new Cloudinary({
 
 export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
     let [projectActivated, setProjectActivated] = useState(false)
+    const { ref, inView } = useInView({  
+        triggerOnce: true, 
+        threshold: 0.1  
+    }); 
     return (
         <>
             <div className="project-item"  onClick={()=>setProjectActivated(true)}>
@@ -34,12 +40,14 @@ export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
                         <div className="wil-container">
                             <p className="wil-description">{wil} </p>
                         </div>
-                        <div className="video-container">
-                            <AdvancedVideo
-                                className="project-item__video"
-                                cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
-                                autoPlay={projectActivated}
-                            />
+                        <div className="video-container" ref={ref}>
+                            {inView &&
+                                <AdvancedVideo
+                                    className="project-item__video"
+                                    cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
+                                    autoPlay={projectActivated}
+                                />
+                            }
                             <ul className="redirect-container">
                                 <li className="wil-repo-link">
                                     Visit the repository <a href={repoLink} target="__blank">here</a>!
