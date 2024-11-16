@@ -80,7 +80,8 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    scrollbar-width: thin;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 
@@ -155,7 +156,7 @@
         max-width: 80%;
     }
     .video-container{
-        padding-top: 1em;
+        padding-top: 5em;
         align-items : center;
     }
 
@@ -176,3 +177,5 @@
         padding: 1rem .2rem;
     }
 }
+
+
