@@ -1,10 +1,9 @@
 import React from "react";
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import "../styles/ProjectItemStyles.css"
 import {Cloudinary} from "@cloudinary/url-gen"
 import {AdvancedVideo} from "@cloudinary/react"
 import { FaStar } from "react-icons/fa";
-import { useInView } from 'react-intersection-observer';  
 
 const cloud = new Cloudinary({
     cloud : {
@@ -14,10 +13,11 @@ const cloud = new Cloudinary({
 
 export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
     let [projectActivated, setProjectActivated] = useState(false)
-    const { ref, inView } = useInView({  
-        triggerOnce: true, 
-        threshold: 0.1  
-    }); 
+    useEffect(()=>{
+        if (projectActivated){
+            console.log(`Proyecto ${name} activado`)
+        }
+    }, [projectActivated])
     return (
         <>
             <div className="project-item"  onClick={()=>setProjectActivated(true)}>
@@ -40,8 +40,8 @@ export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
                         <div className="wil-container">
                             <p className="wil-description">{wil} </p>
                         </div>
-                        <div className="video-container" ref={ref}>
-                            {inView &&
+                        <div className="video-container">
+                            {projectActivated &&
                                 <AdvancedVideo
                                     className="project-item__video"
                                     cldVid={cloud.video(`portafolio/${videoId}`).quality('auto')}
