@@ -13,11 +13,7 @@ const cloud = new Cloudinary({
 
 export function ProjectItem({name, videoId, repoLink, wil, mountedLink, type}){
     let [projectActivated, setProjectActivated] = useState(false)
-    useEffect(()=>{
-        if (projectActivated){
-            console.log(`Proyecto ${name} activado`)
-        }
-    }, [projectActivated])
+
     return (
         <>
             <div className="project-item"  onClick={()=>setProjectActivated(true)}>
