@@ -59,7 +59,7 @@
     height: 0;
     overflow: hidden;
     opacity: 0;
-    background-color: transparent;
+    background-color: hsla(0, 0%, 8%, 0.89);;
     transition: opacity .2s;
 }
 
