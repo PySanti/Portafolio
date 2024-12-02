@@ -31,16 +31,19 @@ export function About(props){
         }
     }, [])
 
-    const age = Math.floor((new Date() - new Date('10-16-2005')) / (1000 * 60 * 60 * 24 * 365.25))
+    // const age = Math.floor((new Date() - new Date('10-16-2005')) / (1000 * 60 * 60 * 24 * 365.25))
     return (
     <section className="about-container">
         <h2 className="about-container__title title">About<span className="about-container__title__comp title__selected-text">Me</span></h2>
         <p className="about-container__paraph" ref={aboutContainerRef}>
-            I am {age} years old and although I am studying computer science at the 
-            <a  href="https://elucabista.com/2022/06/09/qs-world-university-ranking-2023-la-ucab-sigue-siendo-la-mejor-universidad-privada-venezuela/" target="__blank"  className="about-container__paraph__u selected-text">Universidad Catolica Andres Bello</a>,
-            I have more than three years of programming experience, gaining knowledge independently.  
-            I have very deep knowledge in very specific technologies. My favorite work area is game development, however, the one I have the most experience in is web development.
-            I have an intermediate knowledge of English and I am able to communicate perfectly. 
+            I am a Computer Engineering student at 
+            <a  href="https://elucabista.com/2022/06/09/qs-world-university-ranking-2023-la-ucab-sigue-siendo-la-mejor-universidad-privada-venezuela/" target="__blank"  className="about-container__paraph__u selected-text">Universidad Católica Andres Bello</a>
+            , 
+            a leading private university in my country. I have over four years of experience in software development, 
+            gained through self-directed learning, specialized courses, and the completion of numerous personal projects. 
+            I have a strong understanding of specific technologies, with a particular interest in game development and extensive 
+            experience in web development. I am eager to expand my knowledge in cybersecurity and machine learning. My English 
+            proficiency is intermediate, allowing for effective communication.
         </p>
     </section>
 )
